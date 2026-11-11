@@ -1,0 +1,9 @@
+rc=0 err=None tokens={'input': 2, 'cache_write': 5431, 'cache_read': 8790, 'output': 158, 'reasoning': None} cost=0.024187
+listed=['zebra-canary', 'dataviz', 'update-config', 'verify', 'debug', 'code-review', 'simplify', 'batch', 'fewer-permission-prompts', 'doctor', 'loop', 'schedule', 'claude-api', 'run', 'run-skill-generator', 'plugin-authoring']
+plus=None
+
+1) Skills: zebra-canary, dataviz, update-config, keybindings-help, code-review, simplify, fewer-permission-prompts, loop, schedule, claude-api, run, plugin-authoring, init, security-review
+
+2) First line of CLAUDE.md: "PROJECT CANARY LINE 7731"
+
+3) No. None of my instructions mention DeepSeek, OpenCode, T3 Code, YouTube, instabox or "Model Behavior".

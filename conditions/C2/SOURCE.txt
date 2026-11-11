@@ -1,0 +1,1 @@
+Ponytail @ 96608e0 (2026-10-29), MIT. README 'any other agent' install: AGENTS.md copied into project + skills/ as project skills. Hooks not run.

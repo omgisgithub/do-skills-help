@@ -1,0 +1,15 @@
+rc=0 err=None tokens={'input': 5672, 'output': 132, 'reasoning': 0, 'cache_read': 0, 'cache_write': 0} cost=0.0
+listed=None
+plus=None
+
+1) **Skills available:** `opencode`, `report`
+
+2) **Project instruction file first line:** none (no AGENTS.md/CLAUDE.md content was provided in my context)
+
+3) **Mentions:** yes — for **OpenCode** and **DeepSeek** only:
+
+- "You are an AI agent running in OpenCode, a coding agent harness."
+- "Name: DeepSeek V4.1 Flash"
+- "Use this skill for any question about OpenCode itself…" (opencode skill description)
+
+No mentions of T3 Code, YouTube, instabox, or 'Model Behavior'.

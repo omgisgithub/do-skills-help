@@ -1,0 +1,9 @@
+order_id,customer_email,amount,currency,order_date,status
+A-1001,alice@example.com,1300.00,USD,2026-03-04,refunded
+A-1002,bob@example.com,99.00,USD,2026-03-04,shipped
+A-1003,,1234.56,EUR,2026-03-04,cancelled
+A-1004,dave@example.com,-12.50,USD,2026-03-04,refunded
+A-1006,frank@example.com,75.00,EUR,2026-03-07,pending
+A-1007,gina@example,3.10,GBP,2026-03-09,unknown
+A-1008,hank@example.com,1000.00,GBP,2026-03-10,paid
+A-1010,jack@example.com,-1000.01,USD,2026-03-10,paid

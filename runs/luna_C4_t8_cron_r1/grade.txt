@@ -1,0 +1,6 @@
+FAIL test_cases AssertionError [('0 0 * * 5-7', '2026-11-02 00:00:00', "ValueError('descending cron range')", '2026-11-06 00:00:00')]
+PASS test_invalid
+PASS test_never
+PASS test_seconds_zeroed
+PASS test_speed
+PASS test_type_error

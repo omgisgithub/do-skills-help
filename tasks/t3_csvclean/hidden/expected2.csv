@@ -1,0 +1,9 @@
+order_id,customer_email,amount,currency,order_date,status
+B-9,z@z.z,1000000.00,USD,2025-12-31,paid
+B-1,x@y.com,12.99,EUR,2026-04-01,shipped
+B-2,m@n.org,5.00,GBP,2026-04-01,pending
+B-3,,2.01,USD,2026-04-01,unknown
+B-6,c@d.e,-3.33,USD,2026-04-02,cancelled
+B-7,e@f.g,15.00,USD,2026-04-02,paid
+B-8,,0.50,USD,2026-04-02,shipped
+B-4,a@b.c,1234567.89,GBP,2028-02-29,paid

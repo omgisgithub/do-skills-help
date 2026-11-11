@@ -1,0 +1,29 @@
+sonnet done Sat Oct 31 14:47:41 CET 2026, starting deepseek
+lane ['deepseek']: 189 runs planned
+deepseek_C0_t1_ratelimit_r1                pass=True  part=1.00   101s tools= 16 cost=0.0 used=[] err=None
+deepseek_C1_t1_ratelimit_r1                pass=True  part=1.00    90s tools= 13 cost=0.0 used=[] err=None
+deepseek_C2_t1_ratelimit_r1                pass=True  part=1.00    57s tools=  8 cost=0.0 used=[] err=None
+deepseek_C3_t1_ratelimit_r1                pass=True  part=1.00    81s tools= 10 cost=0.0 used=[] err=None
+deepseek_C4_t1_ratelimit_r1                pass=True  part=1.00   115s tools= 16 cost=0.0 used=[] err=None
+deepseek_C5_t1_ratelimit_r1                pass=True  part=1.00    60s tools= 10 cost=0.0 used=[] err=None
+deepseek_C6_t1_ratelimit_r1                pass=True  part=1.00   106s tools= 19 cost=0.0 used=[] err=None
+deepseek_C0_t2_allocate_r1                 pass=True  part=1.00    25s tools=  5 cost=0.0 used=[] err=None
+deepseek_C1_t2_allocate_r1                 pass=True  part=1.00    31s tools=  6 cost=0.0 used=[] err=None
+deepseek_C2_t2_allocate_r1                 pass=True  part=1.00    41s tools=  6 cost=0.0 used=[] err=None
+deepseek_C3_t2_allocate_r1                 pass=True  part=1.00    28s tools=  5 cost=0.0 used=[] err=None
+deepseek_C4_t2_allocate_r1                 pass=True  part=1.00    49s tools=  9 cost=0.0 used=[] err=None
+deepseek_C5_t2_allocate_r1                 pass=True  part=1.00    29s tools=  5 cost=0.0 used=[] err=None
+deepseek_C6_t2_allocate_r1                 pass=True  part=1.00    48s tools=  5 cost=0.0 used=[] err=None
+deepseek_C0_t3_csvclean_r1                 pass=True  part=1.00   110s tools= 13 cost=0.0 used=[] err=None
+deepseek_C1_t3_csvclean_r1                 pass=True  part=1.00   131s tools= 12 cost=0.0 used=[] err=None
+deepseek_C2_t3_csvclean_r1                 pass=True  part=1.00   131s tools= 13 cost=0.0 used=[] err=None
+deepseek_C3_t3_csvclean_r1                 pass=True  part=1.00    80s tools= 11 cost=0.0 used=[] err=None
+deepseek_C4_t3_csvclean_r1                 pass=False part=0.00     4s tools=  1 cost=0.0 used=[] err=limit
+backoff 180s for deepseek: limit
+deepseek_C4_t3_csvclean_r1_a2              pass=False part=0.00     1s tools=  0 cost=0.0 used=[] err=limit
+backoff 600s for deepseek: limit
+deepseek_C4_t3_csvclean_r1_a3              pass=False part=0.00     2s tools=  0 cost=0.0 used=[] err=limit
+backoff 1500s for deepseek: limit
+deepseek_C4_t3_csvclean_r1_a4              pass=False part=0.00     3s tools=  0 cost=0.0 used=[] err=limit
+QUOTA? giving up on deepseek after 4 failed attempts: limit
+DONE exhausted: ['deepseek']

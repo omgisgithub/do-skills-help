@@ -1,0 +1,3 @@
+lane ['grok']: 47 runs planned
+grok_C0_t7_semver_r1                       pass=False part=0.00   901s tools=  3 cost=None used=[] err=no result
+grok_C1_t7_semver_r1                       pass=False part=0.00   901s tools=  4 cost=None used=['spec-check'] err=no result

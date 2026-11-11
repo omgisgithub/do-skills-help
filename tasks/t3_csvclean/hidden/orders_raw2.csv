@@ -1,0 +1,15 @@
+STATUS ,  updated at,order id,  AMOUNT,order date,customer email,currency
+paid,2026-04-01T09:00:00,b-1,"12,99",2026-04-01,X@Y.com,eur
+shipped,2026-04-01T09:00:00,B-1,"12,99",2026-04-01,x@y.com,EUR
+pending,,b-2,$5,1.4.2026,  m@n.org ,GBP
+# a comment in the middle
+weird,2026-04-02 00:00:00,B-3,2.005,4/1/2026,nobody,
+Paid,2026-04-03T00:00:00Z,B-4,"£ 1.234.567,891",29.02.2028,a@b.c,
+paid,2026-04-03T00:00:00Z,B-5,10,29.02.2027,a@b.c,
+canceled,2026-04-03T00:00:00Z,B-6,( 3.333 ),"APRIL 2, 2026",c@d.e,$
+,2026-04-03T00:00:00Z,,1,2026-04-02,c@d.e,
+refunded,2026-04-05T00:00:00,B-7,abc,2026-04-02,e@f.g,
+paid,2026-04-04T00:00:00,B-7,"1,5",2 Apr 2026,e@f.g,
+paid,2026-04-06T00:00:00,B-7,7,2026-13-02,e@f.g,
+SHIPPED,2026-04-01T00:00:00,b-8,0.5,2026/4/2,@f.g,usd
+paid,2026-04-01T00:00:00,B-9,"$1,000,000","December 31, 2025",z@z.z,

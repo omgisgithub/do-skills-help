@@ -1,0 +1,2 @@
+PASS test_hidden_file
+PASS test_public_file

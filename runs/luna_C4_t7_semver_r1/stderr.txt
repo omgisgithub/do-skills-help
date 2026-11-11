@@ -1,0 +1,3 @@
+Reading additional input from stdin...
+2026-10-31T12:53:13.688050Z ERROR codex_core::tools::router: error=apply_patch verification failed: Failed to find expected lines in /tmp/<path>:
+def _comparator_matches(version, op, bound):

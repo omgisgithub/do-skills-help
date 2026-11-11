@@ -1,0 +1,395 @@
+# Candidate moments (auto-extracted; verify in the stream before use)
+
+
+## Model sentences that mention skills / context files / skipping work
+
+- `deepseek_C2_t1_ratelimit_r1` (pass): Skipped: `stats()` still reports its stored token count without first refilling (pre-existing behavior, unrelated to the lockout).
+- `deepseek_C2_t2_allocate_r1` (pass): Skipped: input types outside the four the spec lists (they fall through to `Fraction`, which may raise `TypeError`).
+- `grok_C0_t3_csvclean_r1` (pass): I'll start by reading TASK.md and following the instructions it contains.
+- `grok_C1_t7_semver_r1` (FAIL): I'll start by reading the task description and the spec-check skill so I follow the required workflow.
+- `grokm_C1_t7_semver_r1` (FAIL): I'll start by reading the task description and the spec-check skill so I can follow both exactly.
+- `grokm_C3_t8_cron_r1` (pass): I'll start by reading the task description and any project instructions so I can complete the work in this directory.
+- `haiku_C0_t1_ratelimit_r2` (pass): I didn't run any other tests because the project has none.
+- `haiku_C0_t5_duration_r3` (pass): I did not run a formal test suite because none exists in the directory.
+- `haiku_C0_t6_vm_r1` (pass): The program produces 201 output values, which sum to 210326, and executes 1898 instructions before it halts.
+- `haiku_C0_t6_vm_r1` (pass): I got this by writing a small interpreter that follows the TASK.md rules (comment and blank lines skipped, relative jumps, `dec` floored at 0, `skp` skipping one instruction, 16-bit wrap).
+- `haiku_C0_t6_vm_r2` (pass): The run produced 201 outputs, summing to 210326, and executed 1898 instructions before the program halted after its last `out b`.
+- `haiku_C0_t6_vm_r2` (pass): The `jnz d -9` in the outer loop lands on `add a b`, not on `mul a 31`, because comment and blank lines are not counted as instructions.
+- `haiku_C0_t6_vm_r3` (pass): The program emits 201 values and executes 1898 instructions.
+- `haiku_C0_t9_fifo_r3` (pass): I did not run the new tests against the old code to confirm they fail there.
+- `haiku_C1_t1_ratelimit_r2` (pass): Now I'll verify: the reproduction, the example script, and the rule-by-rule checks from the spec-check skill (both must-pass and must-fail cases).
+- `haiku_C1_t1_ratelimit_r3` (pass): The skill's checklist applies here: run the spec examples, add a must-fail case per rule, then re-read the spec.
+- `haiku_C1_t2_allocate_r2` (pass): The task has a written spec, so I'll read the spec-check skill in the project and follow it.
+- `haiku_C1_t2_allocate_r2` (pass): The skill's checklist is: run every spec example as an assert, test one must-fail case per rule, and re-read the spec against the code.
+- `haiku_C1_t4_refactor_r1` (pass): The spec-check skill applies to this TASK.md, so I'll load it.
+- `haiku_C1_t4_refactor_r1` (pass): Following the skill: I'll write the refactor, then check it against the original with an equivalence test covering the spec examples, negative cases, and random inputs.
+- `haiku_C1_t5_duration_r1` (pass): TASK.md is a written spec, so I'll load the spec-check skill before implementing.
+- `haiku_C1_t5_duration_r1` (pass): I didn't run the code under Python 3.9 itself; the walrus operator and f-strings are both valid there, but the check used the interpreter installed here.
+- `haiku_C1_t5_duration_r3` (pass): This task has a written spec, so I'll load the spec-check skill before implementing.
+- `haiku_C1_t6_vm_r1` (pass): It executed 1898 instructions before halting.
+- `haiku_C1_t6_vm_r1` (pass): - `skp` skips exactly the next instruction when `x < y`, and the skipped instruction doesn't count.
+- `haiku_C1_t6_vm_r2` (pass): The simulation finished: 22 instructions, 210326 total output, 1898 executed instructions.
+- `haiku_C1_t6_vm_r2` (pass): It is the sum of all `out` values followed by the number of executed instructions.
+- `haiku_C1_t6_vm_r2` (pass): The program has 22 real instructions once comment and blank lines are dropped.
+- `haiku_C1_t6_vm_r3` (pass): The simulator halts cleanly with 201 outputs and 1898 executed instructions.
+- `haiku_C1_t6_vm_r3` (pass): It halts cleanly, producing 201 output values summing to 210326, after executing 1898 instructions.
+- `haiku_C1_t6_vm_r3` (pass): The spec was clear on the points that matter here: `jnz` offsets count instructions (blank and comment-only lines are skipped), `skp` skips exactly the next instruction, and `dec` floors at 0.
+- `haiku_C1_t8_cron_r1` (pass): The spec is detailed and the skill asks for every example to be run as an assert, plus negative cases.
+- `haiku_C1_t8_cron_r1` (pass): I did not run the `spec-check` skill's test file or any existing tests, because the directory has none.
+- `haiku_C1_t9_fifo_r1` (pass): I did not run the new tests against the original code to confirm they fail there, but the original failures above were reproduced directly.
+- `haiku_C2_t1_ratelimit_r2` (pass): **What I skipped or did not check:** I did not look for other bugs beyond this one.
+- `haiku_C2_t1_ratelimit_r3` (FAIL): **What I skipped or did not check:**
+- `haiku_C2_t2_allocate_r1` (pass): - **Tests:** I added `test_money.py` with `unittest`, which the CLAUDE.md asks for on non-trivial logic.
+- `haiku_C2_t2_allocate_r1` (pass): Skipped or not checked: I did not add a test for the bare `float` total case beyond the one in the error list.
+- `haiku_C2_t2_allocate_r2` (pass): - The test file is a single `unittest` module, since CLAUDE.md asks for a test on non-trivial logic.
+- `haiku_C2_t2_allocate_r2` (pass): **Skipped or not checked:**
+- `haiku_C2_t2_allocate_r2` (pass): - I did not run a broader randomized check that the total always sums to `total_cents`.
+- `haiku_C2_t2_allocate_r2` (pass): - I did not review the `.claude/skills` files; they are unrelated to this task.
+- `haiku_C2_t2_allocate_r3` (pass): Skipped or not checked: I did not run the code on Python versions other than 3.9.6, and I did not test very large inputs or performance.
+- `haiku_C2_t3_csvclean_r1` (FAIL): - Blank lines and `#` lines are skipped, and the BOM is stripped.
+- `haiku_C2_t3_csvclean_r1` (FAIL): Skipped or not checked:
+- `haiku_C2_t3_csvclean_r1` (FAIL): - I did not run it on other exports or on Python 3.9 beyond this machine's 3.9.6.
+- `haiku_C2_t3_csvclean_r2` (pass): Skipped or not checked: I didn't test large or malformed files, or input with multi-line quoted fields beyond what the `csv` module handles by default.
+- `haiku_C2_t3_csvclean_r2` (pass): I didn't run it against any other export.
+- `haiku_C2_t3_csvclean_r3` (pass): Skipped or not checked: quoted fields that span lines with a blank line inside are not handled, because blank lines are filtered before CSV parsing.
+- `haiku_C2_t4_refactor_r2` (pass): I skipped the git attribution (this isn't a git repo) and did not run anything beyond the local tests and the comparison above.
+- `haiku_C2_t4_refactor_r3` (pass): I skipped a separate CLI or end-to-end run, since the only entry point is `checkout`, which the tests and the random check already exercise.
+- `haiku_C2_t5_duration_r1` (pass): Now a small test file, since this is a parser and CLAUDE.md asks for a check on non-trivial logic.
+- `haiku_C2_t5_duration_r1` (pass): Skipped: I did not run the code on Python 3.9 itself, only on the local interpreter.
+- `haiku_C2_t5_duration_r1` (pass): Nothing else was skipped.
+- `haiku_C2_t5_duration_r2` (pass): I skipped the Python 3.9 interpreter check beyond the local run and did not check against any other callers, since the project has none.
+- `haiku_C2_t5_duration_r3` (pass): Skipped or not checked: I did not add a test for every line of the grammar, and I did not run the code under any other Python version.
+- `haiku_C2_t5_duration_r3` (pass): I also did not run the project's ponytail skill checks, since nothing in the task asked for them.
+- `haiku_C2_t6_vm_r1` (pass): The program prints 77 values (the sum is 210326), and the run executes 1898 instructions.
+- `haiku_C2_t6_vm_r1` (pass): I read "the next instruction is skipped" as the next non-blank, non-comment line, and jumps as counted in instructions, which matches the spec.
+- `haiku_C2_t6_vm_r2` (pass): It produced 201 outputs, and execution halted at index 22 after 1898 instructions.
+- `haiku_C2_t6_vm_r2` (pass): Skipped: I did not check the semantics by hand against the spec beyond the rules above.
+- `haiku_C2_t6_vm_r3` (pass): The run produced 201 outputs summing to 210326, and it executed 1898 instructions before the program ran past the last instruction.
+- `haiku_C2_t6_vm_r3` (pass): Skipped or unchecked: I did not hand-trace the program, so the answer rests on the simulator matching the spec.
+- `haiku_C2_t7_semver_r1` (pass): - **Non-string entries in `versions`**: skipped by `max_satisfying`, and `satisfies` raises `ValueError`.
+- `haiku_C2_t7_semver_r1` (pass): **Skipped or not checked:** I did not compare against a reference implementation such as node-semver, since none is in the project.
+- `haiku_C2_t7_semver_r2` (pass): **Skipped:** I did not add a range-expansion cache, a separate parser class, or any features beyond the spec.
+- `haiku_C2_t7_semver_r2` (pass): **Not checked:** I did not run a fuzz or property test against real npm `semver`, so edge cases outside the examples in TASK.md are unverified.
+- `haiku_C2_t7_semver_r3` (pass): Skipped or not checked: I didn't add a test for every desugaring case, only the spec examples and a few edge cases.
+- `haiku_C2_t8_cron_r1` (pass): I skipped a performance benchmark, and I did not handle `after` close to year 9999, where the date arithmetic can overflow with `OverflowError`.
+- `haiku_C2_t8_cron_r2` (pass): Skipped or not checked: I did not add a test for a Feb 29 gap spanning a non-leap century year, and I did not check time zones or DST, which the spec excludes.
+- `haiku_C2_t8_cron_r3` (pass): Skipped or not checked: I did not add a timezone or DST test, since the spec excludes both.
+- `haiku_C2_t9_fifo_r1` (pass): Skipped or not checked: I did not confirm that the new tests fail on the original code, and I did not check for other callers, because the only caller in the repo is the test file.
+- `haiku_C2_t9_fifo_r2` (pass): - **Lots not consumed oldest-first.** Lots were used in the order they were recorded, so a late-recorded earlier-dated lot was skipped.
+- `haiku_C2_t9_fifo_r2` (pass): **Skipped or not checked:**
+- `haiku_C2_t9_fifo_r2` (pass): - I did not run the tests under a different Python version beyond 3.9.6.
+- `haiku_C2_t9_fifo_r3` (pass): **Skipped or not checked:** I did not check arithmetic beyond the default `Decimal` context precision (28 digits), so unusually long unit costs could still round before the final cent rounding.
+- `haiku_C3_t2_allocate_r1` (pass): Now I'll check the spec examples and the error cases, running the module from outside the project directory with `-I` as the environment guidance asks.
+- `haiku_C3_t3_csvclean_r2` (FAIL): - **Comment and blank lines**: a line counts as a comment only when `#` is its first character, with no leading whitespace skipped.
+- `haiku_C3_t3_csvclean_r3` (pass): I did not run any other inputs.
+- `haiku_C3_t6_vm_r1` (pass): The simulation finished: 201 outputs summing to 210326, over 1898 executed instructions.
+- `haiku_C3_t6_vm_r1` (pass): That is the sum of all 201 output values and the number of executed instructions, from a simulation of `prog.pw9` that follows the PLONKWICK-9 rules in TASK.md.
+- `haiku_C3_t6_vm_r2` (pass): I got this by simulating the program with a small Python script at `/tmp/<path>`, which follows the TASK.md rules: 16-bit wrap on `set`/`add`/`mul`, `mod` skipped when the modulus is 0, `dec` floored at 0, relative jumps counted in instructions, and skipped instructions not counted.
+- `haiku_C3_t6_vm_r2` (pass): The program produces 128 output values, and the script counted 1898 executed instructions.
+- `haiku_C3_t6_vm_r3` (pass): The simulation gives sum 210326 over 201 outputs and 1898 executed instructions.
+- `haiku_C3_t6_vm_r3` (pass): The program produces 201 output values, which sum to 210326, and executes 1898 instructions.
+- `haiku_C3_t7_semver_r2` (pass): - **`max_satisfying`:** invalid entries are skipped, and ties keep the earlier list entry.
+- `haiku_C3_t8_cron_r2` (pass): This is a spec-to-code task, which matches the `python-coding-excellence` skill, so I'll load it first.
+- `haiku_C4_t1_ratelimit_r1` (pass): The project's CLAUDE.md asks for tests with every bug fix, but this directory has no test layout, and the task asked only for a fix in `limiter.py`.
+- `haiku_C4_t1_ratelimit_r3` (pass): I did not run the pre-fix version for comparison; the old behaviour is inferred from the code.
+- `haiku_C4_t2_allocate_r1` (pass): The CLAUDE.md in this directory describes a larger `acme-service` project, so I followed its standards (annotations, Google docstrings, line length 100) by hand and checked line length with `awk`.
+- `haiku_C4_t2_allocate_r2` (pass): This differs from CLAUDE.md, which targets Python 3.12+, but TASK.md explicitly asks for 3.9.
+- `haiku_C4_t2_allocate_r2` (pass): This directory has no `tests/` layout, no `Makefile`, and no Ruff/mypy config, so `make check` and the CLAUDE.md test conventions could not be run here.
+- `haiku_C4_t2_allocate_r3` (pass): Next I'll add a test file, since the repo's CLAUDE.md requires tests for new behavior.
+- `haiku_C4_t2_allocate_r3` (pass): - **Python 3.9, not CLAUDE.md's 3.12+.** TASK.md is explicit about 3.9, so I followed it for this file.
+- `haiku_C4_t2_allocate_r3` (pass): - I did not run `make check`, ruff, or mypy.
+- `haiku_C4_t2_allocate_r3` (pass): The repo has no Makefile or `pyproject.toml` here, and CLAUDE.md's tooling targets 3.12+, so those checks don't apply to this 3.9 task as-is.
+- `haiku_C4_t3_csvclean_r1` (pass): The project's `CLAUDE.md` asks for tests, but it describes a different layout (`src/`, `make` targets) and this task is a single standalone script.
+- `haiku_C4_t3_csvclean_r1` (pass): Verification was the run above plus a compile check; I did not run any linters or type checkers.
+- `haiku_C4_t3_csvclean_r2` (FAIL): I did not run `make check`, Ruff, mypy or the test suite.
+- `haiku_C4_t3_csvclean_r2` (FAIL): I followed the CLAUDE.md conventions I could apply to a single script (type hints, Google-style docstrings, no `print`), and I wrote the usage and error messages to stderr.
+- `haiku_C4_t3_csvclean_r3` (pass): I did not run `make check` or a test suite, because this directory has no Makefile, tests or pyproject.
+- `haiku_C4_t4_refactor_r1` (pass): - The repo's CLAUDE.md targets Python 3.12 and `make` targets.
+- `haiku_C4_t4_refactor_r1` (pass): I did not run mypy or Ruff because they aren't set up here.
+- `haiku_C4_t4_refactor_r2` (pass): The project's CLAUDE.md asks for tests with behaviour changes, so one would be a reasonable follow-up.
+- `haiku_C4_t4_refactor_r3` (pass): - I added type hints and Google-style docstrings, following the project's CLAUDE.md.
+- `haiku_C4_t4_refactor_r3` (pass): - mypy and ruff are not installed in this environment, so I did not run them.
+- `haiku_C4_t4_refactor_r3` (pass): - `CLAUDE.md` describes a different project (`acme-service`, Python 3.12+, `make` targets).
+- `haiku_C4_t5_duration_r1` (pass): Pytest tests were not added, because the CLAUDE.md layout (`tests/unit/...`) doesn't exist here.
+- `haiku_C4_t5_duration_r1` (pass): - **The implementation is split into small helpers** (`_parse_unsigned`, `_clock_seconds`, `_unit_form_seconds`), following the CLAUDE.md guidance on small functions.
+- `haiku_C4_t5_duration_r1` (pass): - **Added type hints and Google-style docstrings** to match CLAUDE.md, even though the stub had neither.
+- `haiku_C4_t5_duration_r2` (pass): CLAUDE.md asks for tests with every change, so the next step would be a `test_duration.py` covering the cases above.
+- `haiku_C4_t5_duration_r2` (pass): I also did not run the repo's `make` targets, because this directory has no Makefile or project setup.
+- `haiku_C4_t5_duration_r3` (pass): - The function is annotated and has Google-style docstrings, per the project's CLAUDE.md.
+- `haiku_C4_t6_vm_r1` (pass): It has 22 instructions, emits 201 output values, and executes 1898 instructions in total.
+- `haiku_C4_t6_vm_r2` (pass): The program produced 201 output values summing to 210326 and executed 1898 instructions before halting.
+- `haiku_C4_t6_vm_r3` (pass): The program has 22 instructions and produces 201 output values.
+- `haiku_C4_t6_vm_r3` (pass): The interpreter ran 1898 instructions.
+- `haiku_C4_t7_semver_r1` (pass): The CLAUDE.md describes a different project (3.12+, Ruff, mypy), but TASK.md explicitly asks for Python 3.9 and stdlib only, so I'll follow TASK.md.
+- `haiku_C4_t7_semver_r1` (pass): The `CLAUDE.md` in the directory describes a different project (Python 3.12+, Ruff, mypy, layered architecture).
+- `haiku_C4_t7_semver_r2` (pass): Not run: `ruff`, `mypy`, and the `make` targets from the project's CLAUDE.md.
+- `haiku_C4_t7_semver_r2` (pass): This directory has no Makefile or pyproject, and CLAUDE.md describes an acme-service layout that doesn't exist here.
+- `haiku_C4_t7_semver_r2` (pass): The task asked for Python 3.9, which I followed over CLAUDE.md's 3.12+ requirement.
+- `haiku_C4_t7_semver_r3` (pass): `CLAUDE.md` calls for tests with every behavior change, so a test file may still be wanted.
+- `haiku_C4_t7_semver_r3` (pass): - `CLAUDE.md` says Python 3.12+, but `TASK.md` says 3.9.
+- `haiku_C4_t8_cron_r1` (pass): I didn't run the repo's lint or type checks because ruff and mypy aren't installed here, and the directory has no `pyproject.toml` or Makefile.
+- `haiku_C4_t8_cron_r2` (pass): It uses only the standard library and has type hints and Google-style docstrings, following the CLAUDE.md style.
+- `haiku_C4_t8_cron_r2` (pass): - I didn't run `make check` or mypy, since this directory has no Makefile or pyproject.
+- `haiku_C4_t8_cron_r3` (pass): Deleting the scratch file, then running the unit tests and a line-length check (CLAUDE.md sets 100).
+- `haiku_C4_t8_cron_r3` (pass): - **Python version:** TASK.md says 3.9, but the project's CLAUDE.md says 3.12+.
+- `haiku_C4_t8_cron_r3` (pass): If CLAUDE.md is the real target, that import can go.
+- `haiku_C4_t8_cron_r3` (pass): CLAUDE.md's `tests/unit/` layout doesn't apply to this standalone directory.
+- `haiku_C4_t9_fifo_r2` (pass): - `CLAUDE.md` describes the `acme-service` repo.
+- `haiku_C4_t9_fifo_r2` (pass): So I did not run `make check`, ruff, or mypy, and I matched the file's existing unannotated style.
+- `haiku_C4_t9_fifo_r3` (pass): I didn't run the new tests against the old code, so I can't show that each one fails before the fix.
+- `haiku_C5_t3_csvclean_r1` (FAIL): - **Comment lines:** a line is ignored if its first non-whitespace character is `#`, so indented comments are skipped too.
+- `haiku_C5_t3_csvclean_r2` (FAIL): The blank line and the `#` comment line are skipped.
+- `haiku_C5_t3_csvclean_r2` (FAIL): I didn't run the script against other messy exports beyond this sample and the spot checks above.
+- `haiku_C5_t5_duration_r1` (pass): I didn't run it under Python 3.9 itself.
+- `haiku_C5_t6_vm_r1` (pass): It produced 201 output values summing to 210326, and it executed 1898 instructions before the program halted.
+- `haiku_C5_t6_vm_r2` (pass): Their sum is 210326, and it executes 1898 instructions before running off the end at the last `out b`.
+- `haiku_C5_t6_vm_r3` (pass): The simulation follows the TASK.md rules: comments and blank lines are dropped, jumps are relative to the instruction index, a skipped instruction is neither executed nor counted, and `jnz 0 -3` never jumps.
+- `haiku_C5_t6_vm_r3` (pass): - **Program:** 22 instructions.
+- `haiku_C5_t6_vm_r3` (pass): - **Instructions executed:** 1898.
+- `haiku_C5_t7_semver_r3` (FAIL): Invalid version strings are skipped.
+- `haiku_C6_t1_ratelimit_r2` (pass): I did not run the new frequent-poller tests against the original code to watch them fail.
+- `haiku_C6_t2_allocate_r3` (pass): - There is no sample input file and no existing test suite in the project, so I did not run any.
+- `haiku_C6_t4_refactor_r1` (pass): - Must-fail cases for each rule: unknown or wrong-case tier, qty 9 for bulk, qty 0 and negative skipped, tax for an unknown or missing category, WELCOME5 below 20, unknown coupon, and PCT capped at 30.
+- `haiku_C6_t6_vm_r1` (pass): It executes 1898 instructions before halting.
+- `haiku_C6_t6_vm_r1` (pass): - **Rule asserts:** `./sim/t.py` covers the edge cases in the spec: dec at 0, negative wraparound, `mod` by 0, `set` wrap, negative literals, skipped instructions not counted, register offsets in `jnz`, and jumps outside the program halting.
+- `haiku_C6_t6_vm_r1` (pass): The `CLAUDE.md` checklist also asks for a re-read of the spec against the code.
+- `haiku_C6_t6_vm_r2` (pass): I wrote a strict parser and interpreter for the PLONKWICK-9 spec, ran `prog.pw9` through it, and it produced 201 output values (sum 210326) over 1898 executed instructions.
+- `haiku_C6_t6_vm_r2` (pass): no skip, `jnz a -2` going back two, comment and blank lines not counting as instructions, wrap-around in `add` and `mul`) all pass as asserts.
+- `haiku_C6_t6_vm_r2` (pass): - **Step counting:** skipped instructions are not counted, a `jnz` that jumps out is counted, and a jump before the start halts.
+- `haiku_C6_t6_vm_r3` (pass): It executes 1898 instructions before halting.
+- `haiku_C6_t6_vm_r3` (pass): - **Comment and blank lines:** these are not instructions, including for jump offsets.
+- `haiku_C6_t6_vm_r3` (pass): - **`skp`:** skips exactly one instruction, and the skipped one is not counted.
+- `haiku_C6_t7_semver_r1` (pass): I did not use git and did not change `TASK.md` or `CLAUDE.md`.
+- `haiku_C6_t7_semver_r2` (pass): In `max_satisfying`, non-string entries are skipped.
+- `haiku_C6_t7_semver_r3` (pass): I did not run the CLAUDE.md checks beyond the tests.
+- `haiku_C6_t8_cron_r2` (pass): Spec is clear and I've read the CLAUDE.md checklist.
+- `luna_C0_t1_ratelimit_r3` (pass): I’ll read the task instructions and inspect the relevant project files, then make the requested changes within this directory.
+- `luna_C0_t2_allocate_r1` (pass): I’ll read the task instructions and inspect the project files, then make the requested changes within this directory.
+- `luna_C0_t3_csvclean_r2` (FAIL): I did not run the script.
+- `luna_C0_t6_vm_r1` (pass): I’ll read `TASK.md`, check any repository instructions it points to, and complete the described work within the current directory.
+- `luna_C0_t6_vm_r1` (pass): I’ll inspect `prog.pw9` and simulate the instruction stream carefully, including executed/skipped counts and jump offsets, then write the single-line result.
+- `luna_C0_t6_vm_r2` (pass): The program has a repeating outer loop with a conditional skipped decrement, so I’m simulating the specified instruction-index and counting rules directly to get the exact total and instruction count.
+- `luna_C0_t7_semver_r1` (pass): I’ll read `TASK.md`, inspect the relevant files, and carry out its instructions within the current directory.
+- `luna_C1_t1_ratelimit_r1` (pass): I’ll read the task instructions and the applicable repo guidance, then make the requested changes in this directory.
+- `luna_C1_t1_ratelimit_r1` (pass): I’m applying the `spec-check` skill because this task is defined in a written spec; I’ll use it to check the requested behavior against the implementation before wrapping up.
+- `luna_C1_t2_allocate_r1` (pass): I’ll read the task and the relevant project instructions, then make the requested changes in this directory.
+- `luna_C1_t2_allocate_r1` (pass): I’m checking `money.py` and the local spec-check instructions before implementing the allocation logic.
+- `luna_C1_t2_allocate_r1` (pass): The task’s spec-check instructions call for running the examples and checking invalid cases.
+- `luna_C1_t3_csvclean_r1` (pass): I’ll read the task instructions and the relevant project guidance, then make the requested changes within this directory.
+- `luna_C1_t4_refactor_r1` (pass): I’ll read the task instructions and the repository guidance, then make the requested changes within this directory.
+- `luna_C1_t4_refactor_r1` (pass): This is a code task with an explicit written spec, so I’m applying the `spec-check` skill: I’ll check the requested behavior against the existing implementation before finishing.
+- `luna_C1_t4_refactor_r1` (pass): `python3 test_pricing.py` passed, along with checks for the gold discount, default tax rate, skipped zero-quantity items, and line ordering.
+- `luna_C1_t5_duration_r1` (pass): I’ll read the task spec and the applicable spec-check instructions, then make the requested changes within this directory.
+- `luna_C1_t7_semver_r1` (FAIL): I’ll read `TASK.md` and the relevant project instructions, then make the requested changes in this directory.
+- `luna_C1_t7_semver_r1` (FAIL): I found the task file and no `AGENTS.md` in the project tree.
+- `luna_C1_t8_cron_r1` (pass): I’ll read the task and its applicable project instructions, then make the requested changes within this directory.
+- `luna_C1_t8_cron_r1` (pass): The repository has no test suite files, and the project instructions call for verification, so I’ll run the spec examples and focused invalid-input checks after the implementation.
+- `luna_C1_t9_fifo_r1` (pass): I’m applying the `spec-check` skill because this task provides a written bug report and says the module docstrings define the specification.
+- `luna_C2_t1_ratelimit_r1` (pass): I’ll read `TASK.md` and the relevant project guidance, then make the smallest complete change inside this directory.
+- `luna_C2_t1_ratelimit_r1` (pass): This is a code fix, so I’m applying the repo’s `ponytail` guidance and tracing the limiter’s callers before editing.
+- `luna_C2_t1_ratelimit_r1` (pass): I didn’t run tests; none are present in the project.
+- `luna_C2_t2_allocate_r1` (pass): I’ll read `TASK.md` and the relevant project instructions, then make the smallest complete change the task requires.
+- `luna_C2_t2_allocate_r1` (pass): I’m applying the repository’s ponytail guidance for this coding task.
+- `luna_C2_t3_csvclean_r1` (FAIL): I’ll read the task and the relevant project guidance, then make the smallest complete change within this directory.
+- `luna_C2_t3_csvclean_r1` (FAIL): I’m applying the project’s ponytail guidance for this coding task.
+- `luna_C2_t3_csvclean_r1` (FAIL): Skipped adding a separate test file; the checks were run directly.
+- `luna_C2_t4_refactor_r1` (pass): I’ll read the task and the relevant project instructions, then make the smallest complete change within this directory.
+- `luna_C2_t4_refactor_r1` (pass): Skipped extra features and broader tests; no known risk.
+- `luna_C2_t5_duration_r1` (pass): I’ll read `TASK.md` and the relevant project guidance, then make the smallest complete change within this directory.
+- `luna_C2_t5_duration_r1` (pass): Skipped a persistent test file.
+- `luna_C2_t6_vm_r1` (pass): I’ll read `TASK.md` and the relevant project instructions, then make the smallest complete change within this directory.
+- `luna_C2_t6_vm_r1` (pass): Skipped other changes; no additional checks.
+- `luna_C2_t7_semver_r1` (pass): I’ll read the task and the project guidance, then trace the files it affects before making the smallest complete change.
+- `luna_C2_t7_semver_r1` (pass): I’ll use the project’s ponytail guidance for the implementation, and inspect the current module plus its callers before editing.
+- `luna_C2_t7_semver_r1` (pass): Skipped adding tests and dependencies.
+- `luna_C2_t8_cron_r1` (pass): I’ll read the task and the relevant repository guidance first, then make the smallest complete change within this directory.
+- `luna_C2_t8_cron_r1` (pass): Skipped a separate test file; I ran inline checks.
+- `luna_C2_t9_fifo_r1` (pass): Skipped broader checks; the API remains unchanged.
+- `luna_C3_t2_allocate_r1` (pass): I’ll check `money.py` and any local project instructions, then implement the exact arithmetic and validation.
+- `luna_C3_t3_csvclean_r1` (FAIL): I’m applying the Python coding skill because this is a self-contained Python script task.
+- `luna_C3_t3_csvclean_r1` (FAIL): I did not run tests or execute the script.
+- `luna_C3_t5_duration_r1` (pass): I’ll read `TASK.md`, follow its instructions, and keep all changes within the current directory.
+- `luna_C3_t8_cron_r1` (pass): I’ll read `TASK.md` and the relevant project guidance, then make the requested changes within this directory.
+- `luna_C4_t2_allocate_r1` (pass): I’ll read `TASK.md` and the relevant repository guidance and code, then carry out the requested changes within this directory.
+- `luna_C4_t4_refactor_r1` (pass): I’ll read `TASK.md` and the relevant repository files, then make the requested changes and run the checks required by the repo instructions.
+- `luna_C4_t7_semver_r1` (pass): I’ll read `TASK.md` and the relevant project files, then make the requested changes and run the checks required by the repo instructions.
+- `luna_C5_t1_ratelimit_r1` (pass): I’ll read `TASK.md` and the relevant project guidance, then carry out the requested work within this directory.
+- `luna_C5_t1_ratelimit_r1` (pass): I’ve confirmed this is a small Python project with no `AGENTS.md`; I’m inspecting the limiter and its usage now to pinpoint the rate-accounting error.
+- `luna_C5_t2_allocate_r1` (pass): I’ll read `TASK.md` and the relevant project guidance, then carry out the requested work within this directory.
+- `luna_C5_t3_csvclean_r1` (FAIL): I’ll read the task instructions and relevant project guidance, then make the requested changes within this directory.
+- `luna_C5_t3_csvclean_r1` (FAIL): I’m applying the repository workflow guidance for implementation.
+- `luna_C5_t4_refactor_r1` (pass): I’ll read the task instructions and the applicable repository guidance, then carry the requested work through in this directory.
+- `luna_C5_t5_duration_r1` (pass): I’ll read `TASK.md` and the relevant project instructions, then carry out the requested work within this directory.
+- `luna_C5_t5_duration_r1` (pass): I’m checking the repository’s workflow guidance and the duration module before implementing the parser.
+- `luna_C5_t6_vm_r1` (pass): I’ll read `TASK.md` and the relevant project guidance first, then carry out the requested changes within this directory.
+- `luna_C5_t6_vm_r1` (pass): I’ll inspect the program and use a small local simulator to avoid errors in its jumps and skipped lines.
+- `luna_C5_t6_vm_r1` (pass): I’m applying the `using-superpowers` skill’s Codex-specific workflow guidance while simulating the program.
+- `luna_C5_t7_semver_r1` (pass): I’ll read `TASK.md`, inspect the relevant files, and carry out its instructions within the current directory.
+- `luna_C5_t7_semver_r1` (pass): I’m applying the repository workflow and feature implementation guidance first, then I’ll inspect the starter module and implement the specified parser and comparison behavior.
+- `luna_C5_t7_semver_r1` (pass): I did not run tests or other verification commands.
+- `luna_C5_t8_cron_r1` (FAIL): I’ll read `TASK.md`, check the project instructions it points to, and complete the requested changes within this directory.
+- `luna_C5_t8_cron_r1` (FAIL): I’m checking the required workflow guidance and the existing module structure before implementing the parser and scheduler.
+- `luna_C5_t8_cron_r1` (FAIL): The repository has only `cronexpr.py`; I won’t add or run tests because you asked for the task implementation and the workspace instructions say not to test unless asked.
+- `sonnet_C0_t1_ratelimit_r3` (pass): I didn't run `example.py`.
+- `sonnet_C0_t4_refactor_r1` (pass): I didn't run the old and new code side by side, so "same results" rests on reading the arithmetic, not a comparison.
+- `sonnet_C0_t4_refactor_r2` (pass): I didn't run any other comparison against the old code, so "exactly the same results" rests on reading the code, not on a before/after check.
+- `sonnet_C0_t5_duration_r2` (pass): - **Not tested:** the `TypeError` for non-`str` input is in the code but I didn't run it.
+- `sonnet_C0_t5_duration_r3` (pass): I didn't run the `TypeError` check for non-`str` input, but the code raises it at the top of the function.
+- `sonnet_C0_t6_vm_r1` (pass): That is the sum of all output values and the number of instructions executed.
+- `sonnet_C0_t6_vm_r2` (pass): I wrote `answer.txt` with `210326 1898`: the sum of all output values and the number of instructions executed.
+- `sonnet_C0_t6_vm_r3` (pass): That is the sum of all output values and the number of instructions executed.
+- `sonnet_C0_t6_vm_r3` (pass): Comment-only and blank lines are not counted as instructions.
+- `sonnet_C0_t6_vm_r3` (pass): A skipped instruction is not counted.
+- `sonnet_C0_t7_semver_r3` (pass): In `max_satisfying`, a non-string entry in the list is skipped as an invalid version.
+- `sonnet_C1_t2_allocate_r1` (pass): I didn't run anything for `Fraction` or `Decimal` weights, a `Decimal` NaN, or `weights` being left unmodified.
+- `sonnet_C1_t2_allocate_r2` (pass): I didn't run the error cases or the check that the `weights` list is left unchanged.
+- `sonnet_C1_t2_allocate_r3` (pass): I didn't run the error cases (empty or negative weights, NaN, `bool` totals) or the check that the input list isn't modified.
+- `sonnet_C1_t5_duration_r3` (pass): I did not run a `TypeError` check on non-`str` input.
+- `sonnet_C1_t6_vm_r1` (pass): The first number is the sum of all output values and the second is the number of instructions executed.
+- `sonnet_C1_t6_vm_r1` (pass): It treats `jnz` offsets as relative to the `jnz` itself and ignores comment-only and blank lines when counting instructions.
+- `sonnet_C1_t6_vm_r2` (pass): That is the sum of all output values and the number of instructions executed.
+- `sonnet_C1_t6_vm_r3` (pass): I wrote `answer.txt` with `210326 1898`: the sum of all output values is 210326, and the program executes 1898 instructions.
+- `sonnet_C1_t7_semver_r2` (pass): I did not run any test files, because the directory only had `TASK.md` and `semver_range.py`.
+- `sonnet_C1_t8_cron_r1` (pass): I didn't run any other checks.
+- `sonnet_C2_t1_ratelimit_r1` (pass): I didn't run `example.py` or any test.
+- `sonnet_C2_t2_allocate_r3` (pass): I skipped a separate test file; the check is an assert block under `if __name__ == "__main__":`.
+- `sonnet_C2_t4_refactor_r3` (pass): - **Skipped:** I added no new tests for gold.
+- `sonnet_C2_t5_duration_r1` (pass): Skipped: I didn't write a separate test file, and the self-check only covers the cases I thought of.
+- `sonnet_C2_t5_duration_r2` (pass): I skipped a separate test file; the asserts live under `__main__` instead.
+- `sonnet_C2_t5_duration_r3` (pass): I skipped nothing from the spec.
+- `sonnet_C2_t6_vm_r1` (pass): The answer is `210326 1898`: the output values sum to 210326, and 1898 instructions were executed.
+- `sonnet_C2_t6_vm_r2` (pass): That is the sum of all output values, then the number of instructions executed.
+- `sonnet_C2_t6_vm_r3` (pass): I skipped writing a test for the simulator, since it was a throwaway script.
+- `sonnet_C2_t7_semver_r3` (pass): Skipped: I didn't test it under Python 3.9 specifically, and I tested against the examples in `TASK.md`, not npm's own suite.
+- `sonnet_C2_t8_cron_r2` (pass): I did not run it on Python 3.9 specifically.
+- `sonnet_C2_t8_cron_r2` (pass): I skipped a full test suite.
+- `sonnet_C3_t2_allocate_r1` (pass): I didn't run the error cases, so the `ValueError` paths (empty weights, negative weights, all zero, NaN or infinite weights, non-int or `bool` totals) are untested.
+- `sonnet_C3_t5_duration_r1` (pass): I didn't run the `TypeError` check for non-`str` input.
+- `sonnet_C3_t6_vm_r1` (pass): That is the sum of all output values (210326) and the number of instructions executed (1898).
+- `sonnet_C3_t6_vm_r2` (pass): That is the sum of all output values, then the number of instructions executed.
+- `sonnet_C3_t6_vm_r3` (pass): That is the sum of all output values, then the number of instructions executed.
+- `sonnet_C3_t7_semver_r2` (pass): `max_satisfying(["1.0.0","bad","1.5.0+a","1.5.0+b","2.0.0"], "^1")` returned `1.5.0+a`, so invalid entries are skipped and ties go to the first in the list.
+- `sonnet_C3_t8_cron_r1` (pass): I didn't run a wider test suite.
+- `sonnet_C3_t8_cron_r2` (pass): Non-`str` expressions raise `TypeError` by an explicit check, but I didn't run that either.
+- `sonnet_C3_t8_cron_r3` (pass): I didn't run any other tests, so the invalid-expression cases and the shortcut variants other than `@hourly` are untested.
+- `sonnet_C4_t1_ratelimit_r2` (pass): - I didn't run `make check`, and I added no regression test, since the directory has no test setup or Makefile.
+- `sonnet_C4_t2_allocate_r1` (pass): I did not run `make check`, and I did not add tests.
+- `sonnet_C4_t2_allocate_r1` (pass): The project instructions ask for tests with every behaviour change, but TASK.md only asked for the implementation and there is no tests directory here.
+- `sonnet_C4_t2_allocate_r2` (pass): I didn't run `make check`, because the directory contains only `money.py`, `TASK.md` and `CLAUDE.md`, with no Makefile or test setup.
+- `sonnet_C4_t2_allocate_r3` (pass): `CLAUDE.md` asks for them and for PEP 695 syntax, but `TASK.md` requires Python 3.9, so I followed `TASK.md`.
+- `sonnet_C4_t3_csvclean_r3` (pass): I didn't run the `make` targets from `CLAUDE.md`, because the project has no `Makefile` or `pyproject.toml`.
+- `sonnet_C4_t4_refactor_r3` (pass): I didn't run `make check`, because the repo has no Makefile, only `pricing.py` and `test_pricing.py`.
+- `sonnet_C4_t5_duration_r1` (pass): `TASK.md` asked for Python 3.9 and the standard library, and `CLAUDE.md` asks for Python 3.12+ style (type hints, tests), so I followed the task and left the function unannotated, as in the stub.
+- `sonnet_C4_t6_vm_r1` (pass): It printed `210326 1898`, so the sum of all output values is 210326 and 1898 instructions were executed.
+- `sonnet_C4_t6_vm_r2` (pass): I ran `prog.pw9` through a simulator I wrote for the PLONKWICK-9 rules, and it outputs a sum of 210326 after 1898 executed instructions.
+- `sonnet_C4_t6_vm_r3` (pass): The program outputs values summing to 210326 and executes 1898 instructions.
+- `sonnet_C4_t7_semver_r1` (pass): I didn't add tests to the repo, and I didn't run `make check`, since the project has no Makefile.
+- `sonnet_C4_t7_semver_r2` (pass): I did not run `make check`, ruff or mypy, because the directory has no Makefile or project config.
+- `sonnet_C4_t7_semver_r2` (pass): `CLAUDE.md` also asks for type hints and pytest tests, which I skipped because `TASK.md` asked for an implementation only.
+- `sonnet_C4_t7_semver_r3` (pass): `max_satisfying` skipped an invalid entry and returned the first of two versions that differ only in build.
+- `sonnet_C4_t7_semver_r3` (pass): The project's `make` targets don't exist here (there is only `TASK.md` and the module), so I didn't run ruff, mypy or pytest, and I didn't add test files.
+- `sonnet_C4_t8_cron_r1` (pass): I didn't run any other tests, and I didn't run the `make` targets from CLAUDE.md.
+- `sonnet_C4_t8_cron_r1` (pass): I didn't write a test file either: CLAUDE.md asks for tests with every behaviour change, but TASK.md didn't ask for one.
+- `sonnet_C4_t8_cron_r2` (pass): I checked it with a quick ad-hoc script, not a test suite, and I did not run `make fmt`, `make lint`, `make typecheck` or `make check`.
+- `sonnet_C4_t9_fifo_r1` (pass): I did not add new tests, and the `make` targets in `CLAUDE.md` don't exist in this directory, so none were run.
+- `sonnet_C4_t9_fifo_r2` (pass): I didn't add new tests to `test_fifo.py`, and I didn't run `make` targets since this directory has none.
+- `sonnet_C5_t2_allocate_r3` (pass): I didn't run any other tests, such as error cases, Decimal or Fraction weights, or ties.
+- `sonnet_C5_t5_duration_r2` (pass): - **Not tested:** `TypeError` for non-`str` input is in the code, but I didn't run it.
+- `sonnet_C5_t6_vm_r1` (pass): It outputs a sum of 210326 and executes 1898 instructions.
+- `sonnet_C5_t6_vm_r2` (pass): That is the sum of all output values and the number of instructions executed.
+- `sonnet_C5_t6_vm_r3` (pass): I wrote `answer.txt` with `210326 1898`: the sum of all output values and the number of instructions executed.
+- `sonnet_C5_t7_semver_r1` (pass): I did not run any larger or randomised tests.
+- `sonnet_C5_t7_semver_r2` (pass): - `max_satisfying`: a bad entry in the list is skipped.
+- `sonnet_C5_t7_semver_r3` (pass): For `max_satisfying`, invalid entries are skipped, and a tie like `1.2.0+a` versus `1.2.0+b` returns the first one in the list.
+- `sonnet_C5_t8_cron_r3` (pass): I didn't run any other checks, such as invalid-expression cases or a `TypeError` for non-`str` input.
+- `sonnet_C6_t3_csvclean_r1` (pass): I didn't run any separate test suite, since there isn't one.
+- `sonnet_C6_t4_refactor_r1` (pass): I didn't run old and new code side by side, because I overwrote the original before saving a copy.
+- `sonnet_C6_t6_vm_r1` (pass): That is the sum of all output values and the number of instructions executed.
+- `sonnet_C6_t6_vm_r1` (pass): - **Comments and blank lines:** they don't count as instructions, so `jnz` offsets are relative to real instructions only.
+- `sonnet_C6_t6_vm_r1` (pass): - **`skp`:** it counts as executed, and the skipped instruction doesn't count.
+- `sonnet_C6_t6_vm_r2` (pass): That is the sum of all output values and the number of instructions executed.
+- `sonnet_C6_t6_vm_r2` (pass): CLAUDE.md asks for spec examples and must-fail cases as asserts, but TASK.md has no examples to run.
+- `sonnet_C6_t6_vm_r3` (pass): - **Instructions executed:** 1898.
+- `sonnet_C6_t7_semver_r1` (pass): - **`max_satisfying`:** an invalid entry is skipped, equal precedence returns the first in the list, and no match returns `None`.
+
+## C4 (bloated context file): tool calls that follow its generic advice
+
+- `haiku_C4_t2_allocate_r1`: {"command": "which python3 python3.9 pytest 2>&1; python3 --version; python3 -m pytest --version 2>&1 | head -1", "description": "Check avai
+- `haiku_C4_t2_allocate_r3`: {"command": "python3 -I -c \"import pytest; print(pytest.__version__)\" 2>&1 | tail -1; python3 -I -c \"import hypothesis\" 2>&1 | tail -1",
+- `haiku_C4_t4_refactor_r3`: {"command": "(python3 -m mypy --strict pricing.py test_pricing.py 2>&1 || echo \"mypy unavailable/failed: $?\"); (python3 -m ruff check pric
+- `haiku_C4_t7_semver_r2`: {"file_path": "/tmp/<path>", "content": "\"\"\"Tests for semver_range, driven by the examples in  | {"file_path": "/tmp/<path>", "content": "\"\"\"Tests for semver_range, driven by the examples in  | {"command": "(python3 -m pytest --version 2>/dev/null || echo \"no pytest\") && python3 -m pytest -q test_semver_range.py -p no:cacheprovide | {"command": "which uv && uv run --no-project --with pytest --python 3.9 python -m pytest -q test_semver_range.py -p no:cacheprovider 2>&1 | 
+- `haiku_C4_t8_cron_r2`: {"file_path": "/tmp/<path>", "content": "\"\"\"Tests for next_run in cronexpr.py, following the spec  | {"command": "/usr/bin/python3 -m pytest --version 2>&1 | head -1; /usr/bin/python3 -m pytest -q -p no:cacheprovider test_cronexpr.py 2>&1 |  | {"command": "/usr/bin/python3 -m venv .tmpvenv && ./.tmpvenv/bin/pip install -q pytest 2>&1 | tail -3; ./.tmpvenv/bin/python -m pytest -q -p
+- `haiku_C4_t8_cron_r3`: {"command": "python3 --version && (which python3.9 || true) && python3 -c \"import pytest\" 2>&1 | tail -1", "description": "Check Python ve
+- `haiku_C4_t9_fifo_r3`: {"command": "python3 --version; ls /usr/local/bin/python3.9 /opt/homebrew/bin/python3.9 2>/dev/null; python3 -c \"import pytest\" 2>/dev/nul | {"replace_all": false, "file_path": "/tmp/<path>", "old_string": "def test_sell_not_enough_stock_leaves_i | {"replace_all": false, "file_path": "/tmp/<path>", "old_string": "def test_sell_ignores_lots_dated_after_ | {"command": "python3 test_fifo.py && grep -n pytest test_fifo.py; echo \"exit=$?\"", "description": "Run the test file and confirm no pytest
+- `luna_C4_t1_ratelimit_r1`: /bin/zsh -lc 'git status --short'
+- `luna_C4_t2_allocate_r1`: /bin/zsh -lc "cat TASK.md && printf '\\n--- status ---\\n' && git status --short && printf '\\n--- files ---\\n' && rg --files -g 'AGENTS.md
+- `luna_C4_t3_csvclean_r1`: /bin/zsh -lc "python3 -m py_compile clean.py && python3 clean.py orders_raw.csv cleaned.csv && cat cleaned.csv && python3 -c 'from pathlib i | /bin/zsh -lc "python3 clean.py orders_raw.csv cleaned.csv && cat cleaned.csv && python3 -c 'from pathlib import Path; Path(\"cleaned.csv\").
+- `luna_C4_t5_duration_r1`: /bin/zsh -lc "cat TASK.md && rg --files -g 'AGENTS.md' -g '"'!TASK.md'"' | head -50 && git status --short"
+- `luna_C4_t7_semver_r1`: /bin/zsh -lc "cat TASK.md && rg --files -g 'AGENTS.md' -g '"'!**/.git/**'"' | head -50 && git status --short"
+- `luna_C4_t8_cron_r1`: /bin/zsh -lc 'cat cronexpr.py && git status --short'
+
+## C0 runs for comparison: same kind of tool calls
+
+- runs with pytest/ruff/mypy/git/pip-style calls: C0 6/85, C4 13/64
+
+## Skill opens with timing
+
+- `grok_C1_t7_semver_r1` (FAIL): {'spec-check': 2.9}
+- `grokm_C1_t7_semver_r1` (FAIL): {'spec-check': 2.9}
+- `grokm_C1_t8_cron_r1` (pass): {'spec-check': 2.8}
+- `grokm_C2_t7_semver_r1` (FAIL): {'ponytail': 16.4}
+- `grokm_C2_t8_cron_r1` (pass): {'ponytail': 2.8}
+- `grokm_C3_t7_semver_r1` (FAIL): {'python-coding-excellence': 4.0}
+- `grokm_C3_t8_cron_r1` (pass): {'python-coding-excellence': 4.9}
+- `haiku_C1_t1_ratelimit_r1` (pass): {'spec-check': 10.7}
+- `haiku_C1_t1_ratelimit_r2` (pass): {'spec-check': 29.1}
+- `haiku_C1_t1_ratelimit_r3` (pass): {'spec-check': 12.8}
+- `haiku_C1_t2_allocate_r1` (pass): {'spec-check': 4.7}
+- `haiku_C1_t2_allocate_r2` (pass): {'spec-check': 5.9}
+- `haiku_C1_t2_allocate_r3` (pass): {'spec-check': 4.4}
+- `haiku_C1_t3_csvclean_r1` (pass): {'spec-check': 3.4}
+- `haiku_C1_t3_csvclean_r2` (pass): {'spec-check': 4.3}
+- `haiku_C1_t3_csvclean_r3` (pass): {'spec-check': 4.9}
+- `haiku_C1_t4_refactor_r1` (pass): {'spec-check': 20.9}
+- `haiku_C1_t4_refactor_r2` (pass): {'spec-check': 17.7}
+- `haiku_C1_t5_duration_r1` (pass): {'spec-check': 4.9}
+- `haiku_C1_t5_duration_r2` (pass): {'spec-check': 4.3}
+- `haiku_C1_t5_duration_r3` (pass): {'spec-check': 4.1}
+- `haiku_C1_t7_semver_r1` (pass): {'spec-check': 5.0}
+- `haiku_C1_t7_semver_r2` (pass): {'spec-check': 5.2}
+- `haiku_C1_t7_semver_r3` (pass): {'spec-check': 5.0}
+- `haiku_C1_t8_cron_r1` (pass): {'spec-check': 12.5}
+- `haiku_C1_t8_cron_r3` (pass): {'spec-check': 6.0}
+- `haiku_C1_t9_fifo_r2` (pass): {'spec-check': 12.2}
+- `haiku_C2_t7_semver_r1` (pass): {'ponytail': 4.6}
+- `haiku_C3_t2_allocate_r2` (pass): {'python-coding-excellence': 13.8}
+- `haiku_C3_t2_allocate_r3` (pass): {'python-coding-excellence': 7.4}
+- `haiku_C3_t3_csvclean_r1` (pass): {'python-coding-excellence': 5.7}
+- `haiku_C3_t4_refactor_r1` (pass): {'python-coding-excellence': 27.0}
+- `haiku_C3_t4_refactor_r3` (pass): {'python-coding-excellence': 21.4}
+- `haiku_C3_t5_duration_r3` (pass): {'python-coding-excellence': 9.8}
+- `haiku_C3_t7_semver_r1` (pass): {'python-coding-excellence': 6.7}
+- `haiku_C3_t7_semver_r2` (pass): {'python-coding-excellence': 14.6}
+- `haiku_C3_t7_semver_r3` (pass): {'python-coding-excellence': 7.3}
+- `haiku_C3_t8_cron_r1` (pass): {'python-coding-excellence': 29.3}
+- `haiku_C3_t8_cron_r2` (pass): {'python-coding-excellence': 47.7}
+- `haiku_C3_t8_cron_r3` (pass): {'python-coding-excellence': 9.5}
+- `luna_C1_t1_ratelimit_r1` (pass): {'spec-check': 7.2}
+- `luna_C1_t2_allocate_r1` (pass): {'spec-check': 6.2}
+- `luna_C1_t3_csvclean_r1` (pass): {'spec-check': 6.7}
+- `luna_C1_t4_refactor_r1` (pass): {'spec-check': 9.7}
+- `luna_C1_t5_duration_r1` (pass): {'spec-check': 5.0}
+- `luna_C1_t6_vm_r1` (pass): {'spec-check': 6.3}
+- `luna_C1_t7_semver_r1` (FAIL): {'spec-check': 5.9}
+- `luna_C1_t8_cron_r1` (pass): {'spec-check': 6.0}
+- `luna_C1_t9_fifo_r1` (pass): {'spec-check': 5.2}
+- `luna_C2_t1_ratelimit_r1` (pass): {'ponytail': 5.2}
+- `luna_C2_t3_csvclean_r1` (FAIL): {'ponytail': 5.9}
+- `luna_C2_t7_semver_r1` (pass): {'ponytail': 6.4}
+- `luna_C3_t3_csvclean_r1` (FAIL): {'python-coding-excellence': 6.1}
+- `luna_C5_t2_allocate_r1` (pass): {'brainstorming': 5.9, 'test-driven-development': 5.9, 'using-superpowers': 5.9}
+- `luna_C5_t3_csvclean_r1` (FAIL): {'test-driven-development': 6.5, 'using-superpowers': 6.5}
+- `luna_C5_t5_duration_r1` (pass): {'brainstorming': 6.6, 'test-driven-development': 6.6}
+- `luna_C5_t6_vm_r1` (pass): {'using-superpowers': 7.0}
+- `luna_C5_t7_semver_r1` (pass): {'brainstorming': 6.9, 'test-driven-development': 6.9, 'using-superpowers': 6.9}
+- `luna_C5_t8_cron_r1` (FAIL): {'brainstorming': 9.0, 'test-driven-development': 9.0, 'using-superpowers': 9.0}

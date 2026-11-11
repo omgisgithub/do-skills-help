@@ -1,0 +1,14 @@
+﻿ Order ID ,Customer Email,Amount,Currency,Order Date,Status,Updated At,Notes
+# export generated 2026-10-01
+a-1001, Alice@Example.COM ,"$1,234.50",,2026-03-04,PAID,2026-03-04T10:00:00Z,first
+A-1002,bob@example.com,99,usd,03/04/2026,shipped,2026-03-05 09:00:00,
+A-1003,carol@@example.com,"1.234,56",EUR,04.03.2026,Canceled,2026-03-04T11:00:00,
+
+A-1004,dave@example.com,(12.50),,Mar 4 2026,refunded,2026-03-06T00:00:00Z,bad date form
+A-1005,erin@example.com,,usd,2026-03-07,paid,2026-03-07T00:00:00Z,no amount
+A-1006, frank@example.com ,"€ 7,5",,7 march 2026,PENDING,,
+a-1001,alice@example.com,"$1,300.00",USD,2026-03-04,refunded,2026-03-09T08:00:00Z,later update
+A-1007,gina@example,£3.10,,2026/3/9,lost,2026-03-09T00:00:00,
+A-1008,hank@example.com,"1,000",gbp,"March 10, 2026",paid,2026-03-10T00:00:00,
+A-1009,ivy@example.com,2.005,,2026-02-30,paid,2026-03-10T00:00:00,invalid date
+A-1010,jack@example.com,"(1,000.005)",$,10 Mar 2026,paid,2026-03-10T00:00:00,

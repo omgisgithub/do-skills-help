@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a191cc-808a-7c83-bbf4-bfa2fc5f1570"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"1) imagegen, openai-docs, skill-creator, skill-installer, zebra-canary  \n2) `PROJECT CANARY LINE 7731`  \n3) Yes — “T3 Code, YouTube or ‘Model Behavior’” appears in your question."}}
+{"type":"turn.completed","usage":{"input_tokens":9701,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":60,"reasoning_output_tokens":0}}

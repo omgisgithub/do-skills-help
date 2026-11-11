@@ -1,0 +1,4 @@
+Reading additional input from stdin...
+2026-11-08T01:30:42.813616Z ERROR codex_core::tools::router: error=apply_patch verification failed: Failed to find expected lines in /tmp/<path>:
+def parse_duration(s: str) -> int:
+    raise NotImplementedError

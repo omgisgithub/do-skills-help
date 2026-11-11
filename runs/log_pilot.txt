@@ -1,0 +1,23 @@
+lane ['haiku']: 10 runs planned
+lane ['luna']: 10 runs planned
+luna_C1_t3_csvclean_r1                     pass=True  part=1.00    40s tools=  7 cost=0.004294 used=['spec-check'] err=None
+luna_C2_t3_csvclean_r1                     pass=False part=0.50    35s tools=  8 cost=0.004203 used=['ponytail'] err=None
+haiku_C1_t3_csvclean_r1                    pass=True  part=1.00   101s tools=  9 cost=0.020768809999999995 used=['spec-check'] err=None
+luna_C3_t3_csvclean_r1                     pass=False part=0.50    32s tools=  5 cost=0.003524 used=['python-coding-excellence'] err=None
+luna_C4_t3_csvclean_r1                     pass=False part=0.50    56s tools= 10 cost=0.00662 used=[] err=None
+haiku_C2_t3_csvclean_r1                    pass=False part=0.50    78s tools= 10 cost=0.01829738 used=[] err=None
+luna_C5_t3_csvclean_r1                     pass=False part=0.50    25s tools=  4 cost=0.004026 used=['test-driven-development', 'using-superpowers'] err=None
+luna_C1_t5_duration_r1                     pass=True  part=1.00    23s tools=  5 cost=0.002454 used=['spec-check'] err=None
+luna_C2_t5_duration_r1                     pass=True  part=1.00    29s tools=  6 cost=0.003843 used=[] err=None
+luna_C3_t5_duration_r1                     pass=True  part=1.00    17s tools=  3 cost=0.001512 used=[] err=None
+haiku_C3_t3_csvclean_r1                    pass=True  part=1.00    93s tools=  6 cost=0.021512840000000002 used=['python-coding-excellence'] err=None
+luna_C4_t5_duration_r1                     pass=True  part=1.00    24s tools=  5 cost=0.003219 used=[] err=None
+luna_C5_t5_duration_r1                     pass=True  part=1.00    23s tools=  5 cost=0.003324 used=['brainstorming', 'test-driven-development'] err=None
+haiku_C4_t3_csvclean_r1                    pass=True  part=1.00    87s tools=  5 cost=0.021696970000000003 used=[] err=None
+haiku_C5_t3_csvclean_r1                    pass=False part=0.50    75s tools=  7 cost=0.018735090000000003 used=[] err=None
+haiku_C1_t5_duration_r1                    pass=True  part=1.00    40s tools=  8 cost=0.00976963 used=['spec-check'] err=None
+haiku_C2_t5_duration_r1                    pass=True  part=1.00    35s tools=  5 cost=0.009684180000000002 used=[] err=None
+haiku_C3_t5_duration_r1                    pass=True  part=1.00    26s tools=  4 cost=0.00793818 used=[] err=None
+haiku_C4_t5_duration_r1                    pass=True  part=1.00    43s tools=  6 cost=0.015109760000000002 used=[] err=None
+haiku_C5_t5_duration_r1                    pass=True  part=1.00    34s tools=  4 cost=0.01020896 used=[] err=None
+DONE exhausted: []

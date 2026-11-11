@@ -1,0 +1,4 @@
+PASS test_bad
+PASS test_big_exact
+FAIL test_good AssertionError [('1h30m', 5400, 'ValueError'), ('1w2d3h4m5s', 788645, 'ValueError'), ('90:00', 5400, 'ValueError'), ('1d1s', 86401, 'ValueError')]
+PASS test_type_error

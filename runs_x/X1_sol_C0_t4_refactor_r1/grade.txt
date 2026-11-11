@@ -1,0 +1,5 @@
+PASS test_gold
+PASS test_matches_legacy_random
+PASS test_structure
+PASS test_tables_are_used
+PASS test_visible_tests_still_pass

@@ -1,0 +1,77 @@
+X1: 75 runs planned, workers=3
+X1_sol_C4_t9_fifo_r1                         pass=True  part=1.00   115s tools=  9 cost=0.105798 used=[] err=None plus5h=7.0 week=60.0
+X1_sol_C0_t1_ratelimit_r2                    pass=True  part=1.00    28s tools=  5 cost=0.022279 used=[] err=None plus5h=9.0 week=60.0
+X1_sol_C5_t9_fifo_r1                         pass=True  part=1.00   163s tools= 17 cost=0.046016 used=['diagnosing-bugs', 'requesting-code-review', 'systematic-debugging', 'test-driven-development', 'using-superpowers', 'verification-before-completion'] err=None plus5h=8.0 week=60.0
+X1_sol_C5_t8_cron_r1                         pass=True  part=1.00   163s tools= 15 cost=0.044327 used=['brainstorming', 'requesting-code-review', 'test-driven-development', 'using-superpowers', 'verification-before-completion', 'writing-plans'] err=None plus5h=9.0 week=60.0
+X1_sol_C1_t1_ratelimit_r2                    pass=True  part=1.00    38s tools=  5 cost=0.025653 used=['other:"/bin/zsh -lc \\"pwd; rg --files -g \'TASK.md\' -g \'AGENTS.md\' -g \'SKILL.md\' -g \'pa', 'spec-check'] err=None plus5h=10.0 week=60.0
+X1_sol_C4_t1_ratelimit_r2                    pass=True  part=1.00    43s tools= 11 cost=0.071509 used=[] err=None plus5h=11.0 week=60.0
+X1_sol_C5_t1_ratelimit_r2                    pass=True  part=1.00    56s tools= 11 cost=0.061646 used=['systematic-debugging', 'test-driven-development', 'using-superpowers', 'verification-before-completion'] err=None plus5h=11.0 week=60.0
+X1_sol_C0_t2_allocate_r2                     pass=True  part=1.00    50s tools=  8 cost=0.049741 used=[] err=None plus5h=12.0 week=60.0
+X1_sol_C1_t2_allocate_r2                     pass=True  part=1.00    59s tools=  7 cost=0.036506 used=['other:"/bin/zsh -lc \\"pwd; rg --files -g \'TASK.md\' -g \'AGENTS.md\' -g \'SKILL.md\' -g \'\\"', 'spec-check'] err=None plus5h=13.0 week=61.0
+X1_sol_C4_t2_allocate_r2                     pass=True  part=1.00    60s tools= 10 cost=0.076909 used=[] err=None plus5h=14.0 week=61.0
+X1_sol_C5_t2_allocate_r2                     pass=True  part=1.00    52s tools=  9 cost=0.079255 used=['brainstorming', 'test-driven-development', 'using-superpowers', 'verification-before-completion'] err=None plus5h=14.0 week=61.0
+X1_sol_C0_t3_csvclean_r2                     pass=True  part=1.00    70s tools=  6 cost=0.044905 used=[] err=None plus5h=15.0 week=61.0
+X1_sol_C1_t3_csvclean_r2                     pass=True  part=1.00   110s tools=  8 cost=0.069478 used=['other:"/bin/zsh -lc \\"pwd; rg --files -g \'TASK.md\' -g \'AGENTS.md\' -g \'SKILL.md\' -g \'pa', 'spec-check'] err=None plus5h=17.0 week=61.0
+X1_sol_C4_t3_csvclean_r2                     pass=True  part=1.00   111s tools=  8 cost=0.101215 used=[] err=None plus5h=17.0 week=61.0
+X1_sol_C5_t3_csvclean_r2                     pass=True  part=1.00   111s tools= 11 cost=0.117716 used=['brainstorming', 'test-driven-development', 'using-superpowers', 'verification-before-completion'] err=None plus5h=18.0 week=61.0
+X1_sol_C0_t4_refactor_r2                     pass=True  part=1.00    73s tools=  8 cost=0.04653 used=[] err=None plus5h=19.0 week=61.0
+X1_sol_C1_t4_refactor_r2                     pass=True  part=1.00    77s tools= 11 cost=0.058669 used=['other:"/bin/zsh -lc \\"pwd; rg --files -g \'TASK.md\' -g \'AGENTS.md\' -g \'SKILL.md\' -g \'pa', 'spec-check'] err=None plus5h=19.0 week=62.0
+X1_sol_C0_t5_duration_r2                     pass=True  part=1.00    59s tools=  7 cost=0.034517 used=[] err=None plus5h=21.0 week=62.0
+X1_sol_C5_t4_refactor_r2                     pass=True  part=1.00    78s tools= 12 cost=0.087605 used=['brainstorming', 'test-driven-development', 'using-superpowers', 'verification-before-completion'] err=None plus5h=21.0 week=62.0
+X1_sol_C4_t4_refactor_r2                     pass=True  part=1.00   101s tools= 11 cost=0.112054 used=[] err=None plus5h=21.0 week=62.0
+X1_sol_C1_t5_duration_r2                     pass=True  part=1.00    53s tools=  8 cost=0.038192 used=['other:"/bin/zsh -lc \\"pwd; rg --files -g \'TASK.md\' -g \'AGENTS.md\' -g \'SKILL.md\' -g \'\\"', 'spec-check'] err=None plus5h=22.0 week=62.0
+X1_sol_C5_t5_duration_r2                     pass=True  part=1.00    58s tools=  9 cost=0.073789 used=['brainstorming', 'test-driven-development', 'using-superpowers', 'verification-before-completion'] err=None plus5h=23.0 week=62.0
+X1_sol_C0_t6_vm_r2                           pass=True  part=1.00    40s tools=  5 cost=0.028049 used=[] err=None plus5h=24.0 week=62.0
+X1_sol_C1_t6_vm_r2                           pass=True  part=1.00    39s tools=  4 cost=0.026864 used=['other:"/bin/zsh -lc \\"pwd && rg --files -g \'TASK.md\' -g \'AGENTS.md\' -g \'SKILL.md\' -g \'', 'spec-check'] err=None plus5h=24.0 week=62.0
+X1_sol_C4_t5_duration_r2                     pass=True  part=1.00   124s tools=  9 cost=0.078382 used=[] err=None plus5h=25.0 week=62.0
+X1_sol_C4_t6_vm_r2                           pass=True  part=1.00    51s tools=  6 cost=0.06896 used=[] err=None plus5h=25.0 week=62.0
+X1_sol_C5_t6_vm_r2                           pass=True  part=1.00    37s tools=  4 cost=0.037501 used=['using-superpowers', 'verification-before-completion'] err=None plus5h=25.0 week=62.0
+X1_sol_C0_t7_semver_r2                       pass=True  part=1.00   123s tools=  6 cost=0.069589 used=[] err=None plus5h=27.0 week=63.0
+X1_sol_C1_t7_semver_r2                       pass=True  part=1.00   162s tools=  9 cost=0.116455 used=['spec-check'] err=None plus5h=29.0 week=63.0
+X1_sol_C4_t7_semver_r2                       pass=True  part=1.00   169s tools= 12 cost=0.13684 used=[] err=None plus5h=29.0 week=63.0
+X1_sol_C0_t8_cron_r2                         pass=True  part=1.00    91s tools=  6 cost=0.056031 used=[] err=None plus5h=31.0 week=63.0
+X1_sol_C1_t8_cron_r2                         pass=True  part=1.00    94s tools=  9 cost=0.073667 used=['other:"/bin/zsh -lc \\"pwd && rg --files -g \'TASK.md\' -g \'AGENTS.md\' -g \'SKILL.md\' -g \'', 'spec-check'] err=None plus5h=32.0 week=64.0
+X1_sol_C5_t7_semver_r2                       pass=True  part=1.00   182s tools= 11 cost=0.062367 used=['brainstorming', 'requesting-code-review', 'test-driven-development', 'using-superpowers', 'verification-before-completion', 'writing-plans'] err=None plus5h=33.0 week=64.0
+X1_sol_C0_t9_fifo_r2                         pass=True  part=1.00    73s tools=  6 cost=0.074929 used=[] err=None plus5h=35.0 week=64.0
+X1_sol_C4_t8_cron_r2                         pass=True  part=1.00   121s tools= 12 cost=0.110126 used=[] err=None plus5h=36.0 week=64.0
+X1_sol_C5_t8_cron_r2                         pass=True  part=1.00   109s tools=  8 cost=0.091408 used=['brainstorming', 'other:"/bin/zsh -lc \\"pwd; rg --files -g \'TASK.md\' -g \'AGENTS.md\' -g \'SKILL.md\' -g \'\\"', 'test-driven-development', 'using-superpowers', 'verification-before-completion'] err=None plus5h=35.0 week=64.0
+X1_sol_C1_t9_fifo_r2                         pass=True  part=1.00    80s tools=  7 cost=0.07612 used=['other:"/bin/zsh -lc \\"pwd; rg --files -g \'TASK.md\' -g \'AGENTS.md\' -g \'SKILL.md\' -g \'\\"', 'spec-check'] err=None plus5h=37.0 week=64.0
+X1_sol_C5_t9_fifo_r2                         pass=True  part=1.00    89s tools= 10 cost=0.087032 used=['systematic-debugging', 'test-driven-development', 'using-superpowers', 'verification-before-completion'] err=None plus5h=38.0 week=65.0
+X1_sol_C0_t1_ratelimit_r3                    pass=True  part=1.00    29s tools=  5 cost=0.022904 used=[] err=None plus5h=38.0 week=65.0
+X1_sol_C4_t9_fifo_r2                         pass=True  part=1.00   113s tools= 14 cost=0.114222 used=[] err=None plus5h=39.0 week=65.0
+X1_sol_C1_t1_ratelimit_r3                    pass=True  part=1.00    39s tools=  6 cost=0.041247 used=['other:"/bin/zsh -lc \\"pwd; rg --files -g \'TASK.md\' -g \'AGENTS.md\' -g \'SKILL.md\' -g \'\\"', 'spec-check'] err=None plus5h=40.0 week=65.0
+X1_sol_C4_t1_ratelimit_r3                    pass=True  part=1.00    46s tools= 12 cost=0.069872 used=[] err=None plus5h=40.0 week=65.0
+X1_sol_C5_t1_ratelimit_r3                    pass=True  part=1.00    45s tools=  8 cost=0.059692 used=['systematic-debugging', 'test-driven-development', 'using-superpowers', 'verification-before-completion'] err=None plus5h=41.0 week=65.0
+X1_sol_C0_t2_allocate_r3                     pass=True  part=1.00    48s tools=  6 cost=0.049194 used=[] err=None plus5h=41.0 week=65.0
+X1_sol_C1_t2_allocate_r3                     pass=True  part=1.00    53s tools=  5 cost=0.03382 used=['other:"/bin/zsh -lc \\"pwd; rg --files -g \'TASK.md\' -g \'AGENTS.md\' -g \'SKILL.md\' -g \'\\"', 'spec-check'] err=None plus5h=42.0 week=65.0
+X1_sol_C4_t2_allocate_r3                     pass=True  part=1.00    66s tools= 10 cost=0.098043 used=[] err=None plus5h=43.0 week=65.0
+X1_sol_C5_t2_allocate_r3                     pass=True  part=1.00    56s tools= 10 cost=0.071928 used=['brainstorming', 'other:"/bin/zsh -lc \\"pwd && rg --files -g \'TASK.md\' -g \'AGENTS.md\' -g \'SKILL.md\' -g \'', 'test-driven-development', 'using-superpowers', 'verification-before-completion'] err=None plus5h=43.0 week=65.0
+X1_sol_C0_t3_csvclean_r3                     pass=True  part=1.00    76s tools=  6 cost=0.058908 used=[] err=None plus5h=44.0 week=65.0
+X1_sol_C1_t3_csvclean_r3                     pass=True  part=1.00    99s tools=  8 cost=0.063518 used=['other:"/bin/zsh -lc \\"pwd; rg --files -g \'TASK.md\' -g \'AGENTS.md\' -g \'SKILL.md\' -g \'\\"', 'spec-check'] err=None plus5h=45.0 week=66.0
+X1_sol_C4_t3_csvclean_r3                     pass=True  part=1.00   131s tools= 12 cost=0.121871 used=[] err=None plus5h=47.0 week=66.0
+X1_sol_C5_t3_csvclean_r3                     pass=True  part=1.00   113s tools= 12 cost=0.096606 used=['brainstorming', 'test-driven-development', 'using-superpowers', 'verification-before-completion'] err=None plus5h=47.0 week=66.0
+X1_sol_C0_t4_refactor_r3                     pass=True  part=1.00    72s tools=  9 cost=0.066713 used=[] err=None plus5h=47.0 week=66.0
+X1_sol_C1_t4_refactor_r3                     pass=True  part=1.00    76s tools= 11 cost=0.054273 used=['other:"/bin/zsh -lc \\"pwd && rg --files -g \'TASK.md\' -g \'AGENTS.md\' -g \'SKILL.md\' -g \'', 'spec-check'] err=None plus5h=49.0 week=66.0
+X1_sol_C4_t4_refactor_r3                     pass=True  part=1.00    80s tools= 15 cost=0.089355 used=[] err=None plus5h=50.0 week=66.0
+X1_sol_C5_t4_refactor_r3                     pass=True  part=1.00   101s tools= 13 cost=0.126738 used=['brainstorming', 'other:"/bin/zsh -lc \\"pwd; rg --files -g \'AGENTS.md\' -g \'*.py\' -g \'SKILL.md\' -g \'\\"\'!\'', 'test-driven-development', 'using-superpowers', 'verification-before-completion'] err=None plus5h=50.0 week=66.0
+X1_sol_C0_t5_duration_r3                     pass=True  part=1.00    51s tools=  8 cost=0.035468 used=[] err=None plus5h=50.0 week=66.0
+X1_sol_C1_t5_duration_r3                     pass=True  part=1.00    70s tools=  8 cost=0.047779 used=['spec-check'] err=None plus5h=52.0 week=67.0
+X1_sol_C5_t5_duration_r3                     pass=True  part=1.00    56s tools= 10 cost=0.070022 used=['brainstorming', 'test-driven-development', 'using-superpowers', 'verification-before-completion'] err=None plus5h=52.0 week=67.0
+X1_sol_C4_t5_duration_r3                     pass=True  part=1.00    58s tools= 14 cost=0.078723 used=[] err=None plus5h=52.0 week=67.0
+X1_sol_C0_t6_vm_r3                           pass=True  part=1.00    26s tools=  4 cost=0.03731 used=[] err=None plus5h=53.0 week=67.0
+X1_sol_C1_t6_vm_r3                           pass=True  part=1.00    38s tools=  5 cost=0.050419 used=['other:"/bin/zsh -lc \\"pwd && rg --files -g \'TASK.md\' -g \'AGENTS.md\' -g \'SKILL.md\' -g \'', 'spec-check'] err=None plus5h=54.0 week=67.0
+X1_sol_C4_t6_vm_r3                           pass=True  part=1.00    42s tools=  7 cost=0.076458 used=[] err=None plus5h=54.0 week=67.0
+X1_sol_C5_t6_vm_r3                           pass=True  part=1.00    32s tools=  4 cost=0.033751 used=['using-superpowers', 'verification-before-completion'] err=None plus5h=54.0 week=67.0
+X1_sol_C0_t7_semver_r3                       pass=True  part=1.00   124s tools=  7 cost=0.072906 used=[] err=None plus5h=56.0 week=67.0
+X1_sol_C1_t7_semver_r3                       pass=True  part=1.00   126s tools=  6 cost=0.080566 used=['other:"/bin/zsh -lc \\"pwd && rg --files -g \'TASK.md\' -g \'AGENTS.md\' -g \'SKILL.md\' -g \'', 'spec-check'] err=None plus5h=57.0 week=67.0
+X1_sol_C4_t7_semver_r3                       pass=True  part=1.00   178s tools= 17 cost=0.14486 used=[] err=None plus5h=58.0 week=68.0
+X1_sol_C0_t8_cron_r3                         pass=True  part=1.00    87s tools=  6 cost=0.083073 used=[] err=None plus5h=59.0 week=68.0
+X1_sol_C1_t8_cron_r3                         pass=True  part=1.00   103s tools=  9 cost=0.064544 used=['other:"/bin/zsh -lc \\"pwd; rg --files -g \'TASK.md\' -g \'AGENTS.md\' -g \'SKILL.md\' -g \'pa', 'spec-check'] err=None plus5h=62.0 week=68.0
+X1_sol_C5_t7_semver_r3                       pass=True  part=1.00   203s tools= 14 cost=0.059426 used=['brainstorming', 'requesting-code-review', 'test-driven-development', 'using-superpowers', 'verification-before-completion'] err=None plus5h=63.0 week=68.0
+X1_sol_C4_t8_cron_r3                         pass=True  part=1.00   137s tools= 14 cost=0.187458 used=[] err=None plus5h=65.0 week=69.0
+X1_sol_C5_t8_cron_r3                         pass=True  part=1.00   103s tools=  8 cost=0.1311 used=['brainstorming', 'systematic-debugging', 'test-driven-development', 'using-superpowers', 'verification-before-completion', 'writing-plans'] err=None plus5h=65.0 week=69.0
+X1_sol_C0_t9_fifo_r3                         pass=True  part=1.00    78s tools=  6 cost=0.045042 used=[] err=None plus5h=66.0 week=69.0
+X1_sol_C1_t9_fifo_r3                         pass=True  part=1.00    78s tools=  7 cost=0.082408 used=['other:"/bin/zsh -lc \\"pwd; rg --files -g \'TASK.md\' -g \'AGENTS.md\' -g \'SKILL.md\' -g \'\\"', 'spec-check'] err=None plus5h=67.0 week=69.0
+X1_sol_C4_t9_fifo_r3                         pass=True  part=1.00   120s tools=  8 cost=0.117153 used=[] err=None plus5h=69.0 week=69.0
+X1_sol_C5_t9_fifo_r3                         pass=True  part=1.00   134s tools= 15 cost=0.046713 used=['diagnosing-bugs', 'requesting-code-review', 'systematic-debugging', 'test-driven-development', 'using-superpowers', 'verification-before-completion'] err=None plus5h=69.0 week=69.0
+DONE X1 complete {'launched': 75, 'go_offpeak': 0.0, 'plus': (69.0, 69.0)}

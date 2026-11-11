@@ -1,0 +1,7 @@
+rc=0 err=None tokens={'input': 2042, 'cache_write': 0, 'cache_read': 8448, 'output': 94, 'reasoning': 51} cost=0.005869
+listed=None
+plus={'limit_id': 'codex', 'limit_name': None, 'primary': {'used_percent': 72.0, 'window_minutes': 300, 'resets_at': 1794104109}, 'secondary': {'used_percent': 54.0, 'window_minutes': 10080, 'resets_at': 1794605149}, 'credits': {'has_credits': False, 'unlimited': False, 'balance': '0'}, 'individual_limit': None, 'spend_control_reached': None, 'plan_type': 'plus', 'rate_limit_reached_type': None}
+
+1) imagegen, openai-docs, skill-creator, skill-installer, zebra-canary
+2) “PROJECT CANARY LINE 7731”
+3) No.

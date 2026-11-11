@@ -1,0 +1,11 @@
+PASS test_decimal_and_fraction
+PASS test_does_not_mutate
+PASS test_errors
+PASS test_examples
+PASS test_float_weights_exact
+PASS test_large_values
+PASS test_negative_total
+PASS test_random_invariants
+PASS test_tie_equal_weight_lower_index
+PASS test_tie_goes_to_larger_weight
+PASS test_zero_weight_gets_zero

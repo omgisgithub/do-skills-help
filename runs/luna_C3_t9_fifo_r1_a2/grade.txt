@@ -1,0 +1,11 @@
+PASS test_existing_tests_pass
+FAIL test_failed_sale_changes_nothing AssertionError 
+FAIL test_future_lots_not_sold_and_failure_atomic AssertionError 
+FAIL test_large_exact AssertionError 
+FAIL test_lots_is_a_copy AssertionError 
+FAIL test_out_of_order_purchases AssertionError 
+FAIL test_rounding_once_half_up AssertionError 
+FAIL test_same_date_keeps_record_order AssertionError 
+FAIL test_used_lots_disappear AssertionError 
+PASS test_validation
+PASS test_value

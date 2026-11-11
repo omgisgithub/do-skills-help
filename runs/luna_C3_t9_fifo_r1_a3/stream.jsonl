@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a19217-6954-7610-821f-d4b9f9a7fe3b"}
+{"type":"turn.started"}
+{"type":"error","message":"You’ve hit your usage limit. Upgrade to Plus to continue using Codex (https://chatgpt.com/explore/plus), or try again at Nov 26th, 2026 10:34 PM."}
+{"type":"turn.failed","error":{"message":"You’ve hit your usage limit. Upgrade to Plus to continue using Codex (https://chatgpt.com/explore/plus), or try again at Nov 26th, 2026 10:34 PM."}}

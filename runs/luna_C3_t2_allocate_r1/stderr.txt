@@ -1,0 +1,7 @@
+Reading additional input from stdin...
+2026-10-31T12:45:32.572801Z ERROR codex_core::tools::router: error=apply_patch verification failed: Failed to find expected lines in /tmp/<path>:
+"""Money helpers."""
+
+def allocate(total_cents, weights):
+    """Split total_cents across weights. See TASK.md for the full spec."""
+    raise NotImplementedError

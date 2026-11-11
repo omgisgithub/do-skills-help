@@ -1,0 +1,6 @@
+PASS test_cases
+PASS test_invalid
+PASS test_never
+PASS test_seconds_zeroed
+PASS test_speed
+PASS test_type_error

@@ -1,0 +1,6 @@
+== luna_canary rc=0 err=None tokens={'input': 9701, 'cache_write': 0, 'cache_read': 0, 'output': 60, 'reasoning': 0} cost=0.001
+   listed_skills: None
+    1) imagegen, openai-docs, skill-creator, skill-installer, zebra-canary   | 2) `PROJECT CANARY LINE 7731`   | 3) Yes — “T3 Code, YouTube or ‘Model Behavior’” appears in your question.
+== luna_empty rc=0 err=None tokens={'input': 9623, 'cache_write': 0, 'cache_read': 0, 'output': 40, 'reasoning': 0} cost=0.000982
+   listed_skills: None
+    1. imagegen, openai-docs, skill-creator, skill-installer   | 2. none   | 3. Yes — “Model Behavior” appears in a tool description.

@@ -1,0 +1,29 @@
+lane ['sonnet']: 27 runs planned
+sonnet_C6_t1_ratelimit_r1                  pass=True  part=1.00    26s tools=  6 cost=0.09542540000000001 used=[] err=None
+sonnet_C6_t2_allocate_r1                   pass=True  part=1.00    42s tools=  4 cost=0.11830900000000001 used=[] err=None
+sonnet_C6_t3_csvclean_r1                   pass=True  part=1.00    46s tools=  4 cost=0.1451462 used=[] err=None
+sonnet_C6_t4_refactor_r1                   pass=True  part=1.00    29s tools=  5 cost=0.1104833 used=[] err=None
+sonnet_C6_t5_duration_r1                   pass=True  part=1.00    29s tools=  3 cost=0.10156389999999998 used=[] err=None
+sonnet_C6_t6_vm_r1                         pass=True  part=1.00    24s tools=  3 cost=0.08837149999999999 used=[] err=None
+sonnet_C6_t7_semver_r1                     pass=True  part=1.00    94s tools=  4 cost=0.2290607 used=[] err=None
+sonnet_C6_t8_cron_r1                       pass=True  part=1.00    29s tools=  4 cost=0.134489 used=[] err=None
+sonnet_C6_t9_fifo_r1                       pass=True  part=1.00    25s tools=  6 cost=0.12432170000000001 used=[] err=None
+sonnet_C6_t1_ratelimit_r2                  pass=True  part=1.00    17s tools=  4 cost=0.09084809999999999 used=[] err=None
+sonnet_C6_t2_allocate_r2                   pass=True  part=1.00    20s tools=  5 cost=0.1101695 used=[] err=None
+sonnet_C6_t3_csvclean_r2                   pass=True  part=1.00    63s tools=  5 cost=0.1722948 used=[] err=None
+sonnet_C6_t4_refactor_r2                   pass=True  part=1.00    25s tools=  4 cost=0.1174738 used=[] err=None
+sonnet_C6_t5_duration_r2                   pass=True  part=1.00    26s tools=  4 cost=0.12328429999999999 used=[] err=None
+sonnet_C6_t6_vm_r2                         pass=True  part=1.00    18s tools=  5 cost=0.09419640000000001 used=[] err=None
+sonnet_C6_t7_semver_r2                     pass=True  part=1.00    88s tools=  9 cost=0.24924590000000002 used=[] err=None
+sonnet_C6_t8_cron_r2                       pass=True  part=1.00    31s tools=  3 cost=0.1305267 used=[] err=None
+sonnet_C6_t9_fifo_r2                       pass=True  part=1.00    21s tools=  5 cost=0.1109648 used=[] err=None
+sonnet_C6_t1_ratelimit_r3                  pass=True  part=1.00    19s tools=  5 cost=0.094192 used=[] err=None
+sonnet_C6_t2_allocate_r3                   pass=True  part=1.00    24s tools=  3 cost=0.10360670000000001 used=[] err=None
+sonnet_C6_t3_csvclean_r3                   pass=True  part=1.00    56s tools=  8 cost=0.1712618 used=[] err=None
+sonnet_C6_t4_refactor_r3                   pass=True  part=1.00    23s tools=  3 cost=0.10230660000000001 used=[] err=None
+sonnet_C6_t5_duration_r3                   pass=True  part=1.00    21s tools=  4 cost=0.1076064 used=[] err=None
+sonnet_C6_t6_vm_r3                         pass=True  part=1.00    17s tools=  5 cost=0.0900478 used=[] err=None
+sonnet_C6_t7_semver_r3                     pass=True  part=1.00    93s tools=  6 cost=0.2497835 used=[] err=None
+sonnet_C6_t8_cron_r3                       pass=True  part=1.00    42s tools=  4 cost=0.1643516 used=[] err=None
+sonnet_C6_t9_fifo_r3                       pass=True  part=1.00    29s tools=  4 cost=0.11477680000000001 used=[] err=None
+DONE exhausted: []

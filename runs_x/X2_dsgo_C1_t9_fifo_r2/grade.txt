@@ -1,0 +1,11 @@
+PASS test_existing_tests_pass
+PASS test_failed_sale_changes_nothing
+PASS test_future_lots_not_sold_and_failure_atomic
+PASS test_large_exact
+PASS test_lots_is_a_copy
+PASS test_out_of_order_purchases
+PASS test_rounding_once_half_up
+PASS test_same_date_keeps_record_order
+PASS test_used_lots_disappear
+PASS test_validation
+PASS test_value

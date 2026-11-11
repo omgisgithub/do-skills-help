@@ -1,0 +1,16 @@
+rc=0 err=None tokens={'input': 5747, 'output': 156, 'reasoning': 96, 'cache_read': 0, 'cache_write': 0} cost=0.0
+listed=None
+plus=None
+
+1) **Skills:** `opencode`, `report`, `zebra-canary`
+
+2) **AGENTS.md first line:** `PROJECT CANARY LINE 7731`
+
+3) **DeepSeek / OpenCode / T3 Code / YouTube / instabox / "Model Behavior":**
+
+- **DeepSeek** — yes: `"Name: DeepSeek V4.1 Flash"`
+- **OpenCode** — yes: `"You are an AI agent running in OpenCode, a coding agent harness."` (also appears in much of the harness text)
+- **T3 Code** — no
+- **YouTube** — no
+- **instabox** — no
+- **"Model Behavior"** — no

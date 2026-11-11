@@ -1,0 +1,6 @@
+FAIL test_bad_ranges NotImplementedError 
+FAIL test_bad_versions NotImplementedError 
+FAIL test_max_satisfying NotImplementedError 
+FAIL test_no NotImplementedError 
+FAIL test_prerelease_ordering NotImplementedError 
+FAIL test_yes NotImplementedError 

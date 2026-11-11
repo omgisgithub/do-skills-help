@@ -1,0 +1,6 @@
+PASS test_bad_ranges
+PASS test_bad_versions
+PASS test_max_satisfying
+FAIL test_no AssertionError [('2.0.0', '1'), ('1.3.0', '<=1.2'), ('2.0.0', '<=1'), ('1.1.9', '>=1.2'), ('2.4.0', '1.2.3 - 2.3'), ('3.0.0', '1.2.3 - 2')]
+PASS test_prerelease_ordering
+FAIL test_yes AssertionError [('1.3.0', '>1.2'), ('2.0.0', '>1'), ('1.1.9', '<1.2'), ('0.0.1', '^0.0.x'), ('0.9.9', '^0.x')]

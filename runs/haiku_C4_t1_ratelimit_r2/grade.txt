@@ -1,0 +1,8 @@
+PASS test_clients_independent
+PASS test_cost_and_capacity
+PASS test_fractional_rate_frequent
+PASS test_frequent_polling_refills
+PASS test_rare_callers_unchanged
+FAIL test_retry_after_accurate AssertionError 0.25
+PASS test_retry_after_does_not_leak_tokens
+PASS test_uneven_poll_interval_keeps_remainder

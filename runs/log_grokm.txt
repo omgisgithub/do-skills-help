@@ -1,0 +1,5 @@
+lane ['grokm']: 48 runs planned
+grokm_C0_t7_semver_r1                      pass=False part=0.83   901s tools= 10 cost=None used=[] err=no result
+grokm_C1_t7_semver_r1                      pass=False part=0.00   901s tools=  4 cost=None used=['spec-check'] err=no result
+grokm_C2_t7_semver_r1                      pass=False part=0.83   901s tools=  7 cost=None used=['ponytail'] err=no result
+grokm_C3_t7_semver_r1                      pass=False part=0.00   901s tools=  4 cost=None used=['python-coding-excellence'] err=no result

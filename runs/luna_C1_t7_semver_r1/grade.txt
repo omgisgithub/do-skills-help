@@ -1,0 +1,6 @@
+PASS test_bad_ranges
+PASS test_bad_versions
+PASS test_max_satisfying
+PASS test_no
+PASS test_prerelease_ordering
+FAIL test_yes TypeError '>' not supported between instances of 'int' and 'NoneType'

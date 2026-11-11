@@ -1,0 +1,30 @@
+main lanes done Sat Oct 31 16:18:30 CET 2026, starting C6 for haiku+sonnet
+lane ['haiku', 'sonnet']: 27 runs planned
+haiku_C6_t1_ratelimit_r1                   pass=True  part=1.00    57s tools= 10 cost=0.013704059999999999 used=[] err=None
+haiku_C6_t2_allocate_r1                    pass=True  part=1.00    32s tools=  4 cost=0.00889062 used=[] err=None
+haiku_C6_t3_csvclean_r1                    pass=True  part=1.00   125s tools= 13 cost=0.02802936 used=[] err=None
+haiku_C6_t4_refactor_r1                    pass=True  part=1.00    79s tools= 11 cost=0.01633278 used=[] err=None
+haiku_C6_t5_duration_r1                    pass=True  part=1.00    41s tools=  6 cost=0.0122047 used=[] err=None
+haiku_C6_t6_vm_r1                          pass=True  part=1.00    25s tools=  5 cost=0.008086600000000001 used=[] err=None
+haiku_C6_t7_semver_r1                      pass=True  part=1.00   200s tools=  8 cost=0.040877830000000004 used=[] err=None
+haiku_C6_t8_cron_r1                        pass=True  part=1.00   147s tools=  8 cost=0.0207155 used=[] err=None
+haiku_C6_t9_fifo_r1                        pass=True  part=1.00    97s tools=  8 cost=0.013518269999999999 used=[] err=None
+haiku_C6_t1_ratelimit_r2                   pass=True  part=1.00    75s tools=  9 cost=0.0090293 used=[] err=None
+haiku_C6_t2_allocate_r2                    pass=True  part=1.00    69s tools=  5 cost=0.010340380000000001 used=[] err=None
+haiku_C6_t3_csvclean_r2                    pass=True  part=1.00   163s tools=  7 cost=0.024810199999999998 used=[] err=None
+haiku_C6_t4_refactor_r2                    pass=True  part=1.00   103s tools=  6 cost=0.011780820000000001 used=[] err=None
+haiku_C6_t5_duration_r2                    pass=True  part=1.00    76s tools=  4 cost=0.00936239 used=[] err=None
+haiku_C6_t6_vm_r2                          pass=True  part=1.00   167s tools= 11 cost=0.01438804 used=[] err=None
+haiku_C6_t7_semver_r2                      pass=True  part=1.00   256s tools= 20 cost=0.05289825000000001 used=[] err=None
+haiku_C6_t8_cron_r2                        pass=True  part=1.00    99s tools= 12 cost=0.02239244 used=[] err=None
+haiku_C6_t9_fifo_r2                        pass=True  part=1.00    37s tools=  7 cost=0.01082144 used=[] err=None
+haiku_C6_t1_ratelimit_r3                   pass=True  part=1.00    59s tools=  9 cost=0.01456568 used=[] err=None
+haiku_C6_t2_allocate_r3                    pass=True  part=1.00    31s tools=  6 cost=0.00912778 used=[] err=None
+haiku_C6_t3_csvclean_r3                    pass=True  part=1.00   158s tools= 10 cost=0.026898400000000003 used=[] err=None
+haiku_C6_t4_refactor_r3                    pass=True  part=1.00    80s tools= 13 cost=0.019261880000000002 used=[] err=None
+haiku_C6_t5_duration_r3                    pass=True  part=1.00    35s tools=  8 cost=0.010531210000000003 used=[] err=None
+haiku_C6_t6_vm_r3                          pass=True  part=1.00    41s tools=  8 cost=0.010940140000000001 used=[] err=None
+haiku_C6_t7_semver_r3                      pass=True  part=1.00   211s tools= 11 cost=0.045733109999999993 used=[] err=None
+haiku_C6_t8_cron_r3                        pass=True  part=1.00   109s tools= 11 cost=0.02471295 used=[] err=None
+haiku_C6_t9_fifo_r3                        pass=True  part=1.00    38s tools=  6 cost=0.01007637 used=[] err=None
+DONE exhausted: []

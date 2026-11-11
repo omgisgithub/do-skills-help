@@ -1,0 +1,4 @@
+PASS test_bad
+PASS test_big_exact
+FAIL test_good AssertionError [('1h30m', 5400, Fraction(5400, 1)), (' 2d 4h ', 187200, Fraction(187200, 1)), ('1.5h', 5400, Fraction(5400, 1)), ('1w2d3h4m5s', 788645, Fraction(788645, 1)), ('-45s', -45, Fraction(-45, 1)), ('-0s', 0, Fraction(0, 1)), ('0s', 0, Fraction(0, 1)), ('05m', 300, Fraction(300, 1)), ('1.5m', 90, Fraction(90, 1)), ('0.1h', 360, Fraction(360, 1)), ('0.25m', 15, Fraction(15, 1)), ('1h 30m', 5400, Fraction(5400, 1)), ('1w 1s', 604801, Fraction(604801, 1)), ('-1h', -3600, Fraction(-3600, 1)), ('2.5d', 216000, Fraction(216000, 1)), ('\t3m\n', 180, Fraction(180, 1)), ('1d1s', 86401, Fraction(86401, 1)), ('1.000s', 1, Fraction(1, 1)), ('1.25w', 756000, Fraction(756000, 1)), ('10s', 10, Fraction(10, 1)), ('1h 30m ', 5400, Fraction(5400, 1))]
+PASS test_type_error

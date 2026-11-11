@@ -1,0 +1,9 @@
+rc=0 err=None tokens={'input': 2, 'cache_write': 5266, 'cache_read': 8790, 'output': 153, 'reasoning': None} cost=0.023476999999999998
+listed=['dataviz', 'update-config', 'verify', 'debug', 'code-review', 'simplify', 'batch', 'fewer-permission-prompts', 'doctor', 'loop', 'schedule', 'claude-api', 'run', 'run-skill-generator', 'plugin-authoring']
+plus=None
+
+1) Skills: dataviz, update-config, keybindings-help, code-review, simplify, fewer-permission-prompts, loop, schedule, claude-api, run, plugin-authoring, init, security-review
+
+2) Project instruction file: none (no AGENTS.md/CLAUDE.md was provided).
+
+3) No. None of my instructions mention DeepSeek, OpenCode, T3 Code, YouTube, instabox, or "Model Behavior".

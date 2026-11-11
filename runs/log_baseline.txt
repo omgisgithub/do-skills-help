@@ -1,0 +1,23 @@
+24 runs planned
+luna_C0_t1_ratelimit_r1                    pass=True  part=1.00    13s tools=  3 cost=0.001002 used=[] err=None
+haiku_C0_t1_ratelimit_r1                   pass=True  part=1.00    17s tools=  6 cost=0.006312400000000001 used=[] err=None
+sonnet_C0_t1_ratelimit_r1                  pass=True  part=1.00    11s tools=  3 cost=0.07948380000000001 used=[] err=None
+luna_C0_t2_allocate_r1                     pass=True  part=1.00    17s tools=  3 cost=0.001969 used=[] err=None
+haiku_C0_t2_allocate_r1                    pass=True  part=1.00    26s tools=  5 cost=0.007763289999999999 used=[] err=None
+sonnet_C0_t2_allocate_r1                   pass=True  part=1.00    12s tools=  3 cost=0.08770700000000001 used=[] err=None
+haiku_C0_t3_csvclean_r1                    pass=False part=0.50    64s tools=  5 cost=0.015558990000000003 used=[] err=None
+luna_C0_t3_csvclean_r1                     pass=False part=0.50    25s tools=  3 cost=0.002866 used=[] err=None
+grok_C0_t2_allocate_r1                     pass=True  part=1.00   441s tools=  7 cost=0.363244 used=[] err=None
+sonnet_C0_t3_csvclean_r1                   pass=True  part=1.00    35s tools=  5 cost=0.1349237 used=[] err=None
+haiku_C0_t4_refactor_r1                    pass=True  part=1.00    61s tools= 13 cost=0.01571317 used=[] err=None
+luna_C0_t4_refactor_r1                     pass=True  part=1.00    18s tools=  6 cost=0.003412 used=[] err=None
+grok_C0_t4_refactor_r1                     pass=True  part=1.00   282s tools= 10 cost=0.331674 used=[] err=None
+grok_C0_t1_ratelimit_r1                    pass=True  part=1.00   901s tools=  9 cost=None used=[] err=no result
+sonnet_C0_t4_refactor_r1                   pass=True  part=1.00    21s tools=  3 cost=0.0972936 used=[] err=None
+luna_C0_t5_duration_r1                     pass=True  part=1.00    17s tools=  4 cost=0.00252 used=[] err=None
+haiku_C0_t5_duration_r1                    pass=True  part=1.00    26s tools=  5 cost=0.00786916 used=[] err=None
+sonnet_C0_t5_duration_r1                   pass=True  part=1.00    27s tools=  6 cost=0.11640529999999999 used=[] err=None
+haiku_C0_t6_vm_r1                          pass=True  part=1.00    15s tools=  4 cost=0.0062781 used=[] err=None
+luna_C0_t6_vm_r1                           pass=True  part=1.00    17s tools=  5 cost=0.002226 used=[] err=None
+grok_C0_t3_csvclean_r1                     pass=True  part=1.00   901s tools=  6 cost=None used=[] err=no result
+sonnet_C0_t6_vm_r1                         pass=True  part=1.00    12s tools=  3 cost=0.0792948 used=[] err=None

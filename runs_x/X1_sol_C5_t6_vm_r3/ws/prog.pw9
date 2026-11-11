@@ -1,0 +1,27 @@
+; PLONKWICK-9 sample program
+set a 7
+set b 1
+set d 301          ; outer counter
+
+; ---- main loop ----
+mul a 31
+add a b
+mod a 1000
+out a
+mul b 3            ; b grows fast, wraps
+skp a 500          ; small a -> skip the extra decrement
+dec d
+; housekeeping
+dec d
+mod c 0
+add c a
+jnz d -9
+
+set c 65530
+add c 9
+out c
+add a -1000
+out a
+jnz 0 -3
+skp b c
+out b
